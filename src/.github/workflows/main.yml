@@ -1,0 +1,146 @@
+name: Deploy Jaustis to AWS
+on:
+    push:
+        branches: [main, demo]
+        paths-ignore:
+            - 'README.md'
+            - '*.md'
+            - 'docs/**'
+
+jobs:
+    # Bendras build job visoms aplinkoms
+    build:
+        runs-on: ubuntu-latest
+        if: contains(github.event.head_commit.message, '[demo-prod]') || contains(github.event.head_commit.message, '[demo-dev]') || contains(github.event.head_commit.message, '[dev]') || contains(github.event.head_commit.message, '[prod]')
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '22'
+                  cache: 'npm'
+
+            - name: Cache node modules
+              uses: actions/cache@v3
+              id: cache-nodemodules
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-
+
+            - name: Install dependencies
+              if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+              run: npm ci
+
+            - name: Cache build
+              uses: actions/cache@v3
+              id: cache-build
+              with:
+                  path: dist
+                  key: build-${{ github.sha }}
+
+            - name: Build React app
+              if: steps.cache-build.outputs.cache-hit != 'true'
+              run: npm run build
+
+            # Upload build rezultatą kitiems job'ams
+            - name: Upload build artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                  name: dist-files
+                  path: dist/
+
+    # PROD serveris - production aplikacija
+    deploy-prod:
+        runs-on: ubuntu-latest
+        needs: build
+        if: contains(github.event.head_commit.message, '[prod]')
+        steps:
+            - name: Download build artifacts
+              uses: actions/download-artifact@v4
+              with:
+                  name: dist-files
+                  path: dist/
+
+            - name: Deploy to production
+              uses: appleboy/scp-action@v0.1.4
+              with:
+                  host: ${{ secrets.SERVER_HOST }}
+                  username: ${{ secrets.SERVER_USER }}
+                  key: ${{ secrets.SERVER_SSH_KEY }}
+                  source: 'dist/*'
+                  target: ${{ vars.TARGET_PATH }}
+
+            - name: Restart nginx
+              uses: appleboy/ssh-action@v0.1.5
+              with:
+                  host: ${{ secrets.SERVER_HOST }}
+                  username: ${{ secrets.SERVER_USER }}
+                  key: ${{ secrets.SERVER_SSH_KEY }}
+                  script: |
+                      sudo systemctl restart nginx
+
+    # PROD serveris - demo versija
+    deploy-demo-prod:
+        runs-on: ubuntu-latest
+        needs: build
+        if: contains(github.event.head_commit.message, '[demo-prod]')
+        steps:
+            - name: Download build artifacts
+              uses: actions/download-artifact@v4
+              with:
+                  name: dist-files
+                  path: dist/
+
+            - name: Deploy to demo-prod
+              uses: appleboy/scp-action@v0.1.4
+              with:
+                  host: ${{ secrets.SERVER_HOST }}
+                  username: ${{ secrets.SERVER_USER }}
+                  key: ${{ secrets.SERVER_SSH_KEY }}
+                  source: 'dist/*'
+                  target: ${{ vars.DEMO_TARGET_PATH }}
+
+    # DEV serveris - development aplikacija
+    deploy-dev:
+        runs-on: ubuntu-latest
+        needs: build
+        if: contains(github.event.head_commit.message, '[dev]')
+        steps:
+            - name: Download build artifacts
+              uses: actions/download-artifact@v4
+              with:
+                  name: dist-files
+                  path: dist/
+
+            - name: Deploy to dev
+              uses: appleboy/scp-action@v0.1.4
+              with:
+                  host: ${{ secrets.DEV_SERVER_HOST }}
+                  username: ${{ secrets.DEV_SERVER_USER }}
+                  key: ${{ secrets.DEV_SERVER_SSH_KEY }}
+                  source: 'dist/*'
+                  target: ${{ vars.TARGET_PATH }}
+
+    # DEV serveris - demo versija
+    deploy-demo-dev:
+        runs-on: ubuntu-latest
+        needs: build
+        if: contains(github.event.head_commit.message, '[demo-dev]')
+        steps:
+            - name: Download build artifacts
+              uses: actions/download-artifact@v4
+              with:
+                  name: dist-files
+                  path: dist/
+
+            - name: Deploy to demo-dev
+              uses: appleboy/scp-action@v0.1.4
+              with:
+                  host: ${{ secrets.DEV_SERVER_HOST }}
+                  username: ${{ secrets.DEV_SERVER_USER }}
+                  key: ${{ secrets.DEV_SERVER_SSH_KEY }}
+                  source: 'dist/*'
+                  target: ${{ vars.DEMO_TARGET_PATH }}
