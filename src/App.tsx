@@ -4,7 +4,6 @@ import { languages } from './i18n/languages';
 
 function App() {
     const { t, i18n } = useTranslation();
-    
 
 	return (
 		<>

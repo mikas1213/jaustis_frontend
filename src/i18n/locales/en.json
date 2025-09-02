@@ -2,9 +2,9 @@
     "navbar": {
         "about": "About",
         "reservation": "Reservation",
-        "price": "price",
-        "articles": "Blog",
-        "faq": "F.A.Q",
+        "price": "Price",
+        "articles": "Articles",
+        "faq": "F.A.Q.",
         "mySessions": "My sessions",
         "signup": "Sign Up",
         "signin": "Sign In",

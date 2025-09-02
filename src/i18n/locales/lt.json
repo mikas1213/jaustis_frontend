@@ -1,12 +1,12 @@
 {
     "navbar": {
         "about": "Apie",
-        "reservation": "Rezervacija",
+        "reservation": "Rezervacijos",
         "price": "Kaina",
         "articles": "Straipsniai",
         "faq": "D.U.K.",
         "mySessions": "Mano sesijos",
-        "signup": "Registracija",
+        "signup": "Registruotis",
         "signin": "Prisijungti",
         "logout": "Atsijungti"
     }
