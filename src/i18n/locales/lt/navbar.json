@@ -1,0 +1,13 @@
+{
+    "navbar": {
+        "about": "Apie",
+        "reservation": "Rezervacija",
+        "price": "Kaina",
+        "articles": "Straipsniai",
+        "faq": "D.U.K.",
+        "mySessions": "Mano sesijos",
+        "signup": "Registracija",
+        "signin": "Prisijungti",
+        "logout": "Atsijungti"
+    }
+}

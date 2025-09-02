@@ -1,0 +1,13 @@
+{
+    "navbar": {
+        "about": "Om",
+        "reservation": "Reservasjon",
+        "price": "Pris",
+        "articles": "Artikler",
+        "faq": "O.S.S.",
+        "mySessions": "Mine økter",
+        "signup": "Registrering",
+        "signin": "Logg Inn",
+        "logout": "Logg Ut"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "navbar": {
+        "about": "About",
+        "reservation": "Reservation",
+        "price": "price",
+        "articles": "Blog",
+        "faq": "F.A.Q",
+        "mySessions": "My sessions",
+        "signup": "Sign Up",
+        "signin": "Sign In",
+        "logout": "Log Out"
+    }
+}
