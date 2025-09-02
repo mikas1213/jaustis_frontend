@@ -28,7 +28,7 @@ function App() {
             <div>
                 {
                     Object.entries(languages).map(([code, lng]) => (
-                        <button key={code} onClick={() => i18n.changeLanguage(code)}>{lng.name}</button>
+                        <button key={code} onClick={() => i18n.changeLanguage(code)}>{lng.name} {lng.icon}</button>
                     ))
                 }
             </div>
