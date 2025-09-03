@@ -1,0 +1,61 @@
+/* .container {
+	background: linear-gradient(180deg, #f4ece9 7%, #e9dfdd 18%, #ae9982 100%);
+	min-height: 100vh;
+	min-height: calc(100vh + env(safe-area-inset-top));
+	padding-top: env(safe-area-inset-top);
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
+.preventBounce {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, #f4ece9 7%, #e9dfdd 18%, #ae9982 100%);
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+} */
+
+.preventBounce {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	height: 100dvh; /* Dynamic viewport height */
+	background: linear-gradient(
+		180deg,
+		#f4ece9 0%,
+		#f4ece9 10%,
+		#e9dfdd 18%,
+		#ae9982 100%
+	);
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.container {
+	background: linear-gradient(
+		180deg,
+		#f4ece9 0%,
+		#f4ece9 10%,
+		#e9dfdd 18%,
+		#ae9982 100%
+	);
+	min-height: 100vh;
+	min-height: 100dvh;
+	padding-top: env(safe-area-inset-top, 0);
+	padding-bottom: env(safe-area-inset-bottom, 0);
+	width: 100%;
+}
+
+/* Papildomas body fix */
+:global(html),
+:global(body) {
+	margin: 0;
+	padding: 0;
+	background-color: #f4ece9;
+	height: 100%;
+	overflow-x: hidden;
+}
