@@ -1,49 +1,43 @@
-/* globals.css arba index.css */
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  /* overflow-x: hidden; */
-}
-
-
-/* body::before {
-  content: '';
-  position: fixed;
-  top: -100vh; 
-  left: 0;
-  width: 100vw;
-  height: 300vh; /* Daug aukščio
-  background: linear-gradient(
-    180deg,
-    #F4ECE9 0%,
-    #F4ECE9 33.33%,
-    #E9DFDD 40%,
-    #AE9982 100%
-  );
-  z-index: -999;
-  pointer-events: none;
-} */
-
-        body:before {
-            background: #92f2f2;
-            content: "";
-            display: block;
-            height: 100vh;
-            opacity: 0;
-            pointer-events: none;
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 1.2rem;
-            z-index: 999;
+ /* .container {
+            background-color: #AE9982;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-
-
+        
+        .content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            padding-top: env(safe-area-inset-top);
+        } */
+        
+        /* Papildomas sprendimas bounce efektui */
+        /* html, body {
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+        } */
+        
+        /* Išplėsta fono spalva už viewport ribų */
+        /* html {
+            background-color: #AE9982;
+        } */
+        
+        /* Alternatyvus sprendimas su ::before pseudo elementu */
+        /* body::before {
+            content: '';
+            position: fixed;
+            top: -100px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: #AE9982;
+            z-index: -1;
+        } */
