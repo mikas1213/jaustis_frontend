@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { createBrowserRouter } from 'react-router';
 import { RouterProvider } from 'react-router/dom';
 
@@ -16,6 +18,8 @@ import AboutPage from './pages/client/AboutPage';
 
 const hostname = window.location.hostname;
 const isAdmin = hostname.startsWith('admin.');
+
+
 
 const adminRoutes = [
 	{
@@ -44,6 +48,7 @@ const clientRoutes = [
 const router = createBrowserRouter(isAdmin ? adminRoutes : clientRoutes);
 
 function App() {
+    
 	return <RouterProvider router={router} />;
 	/*
     const { t, i18n } = useTranslation();

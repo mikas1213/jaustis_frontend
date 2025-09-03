@@ -1,43 +1,6 @@
- /* .container {
-            background-color: #AE9982;
-            min-height: 100vh;
-            padding: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-        
-        .content {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 50px;
-            text-align: center;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            padding-top: env(safe-area-inset-top);
-        } */
-        
-        /* Papildomas sprendimas bounce efektui */
-        /* html, body {
-            overflow-x: hidden;
-            -webkit-overflow-scrolling: touch;
-        } */
-        
-        /* Išplėsta fono spalva už viewport ribų */
-        /* html {
-            background-color: #AE9982;
-        } */
-        
-        /* Alternatyvus sprendimas su ::before pseudo elementu */
-        /* body::before {
-            content: '';
-            position: fixed;
-            top: -100px;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background-color: #AE9982;
-            z-index: -1;
-        } */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+

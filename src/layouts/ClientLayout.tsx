@@ -1,15 +1,12 @@
 import { Outlet } from 'react-router';
+import { Header } from '../components/layout';
 
 const ClientLayout = () => {
 	return (
 		<div className='container'>
-			
-            
-				<h3>Header</h3>
-				<Outlet />
-				<h4>Footer</h4>
-            
-			
+			<Header />
+			<Outlet />
+			<h4>Footer</h4>
 		</div>
 	);
 };
