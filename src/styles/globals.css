@@ -13,18 +13,18 @@ body {
   /* overflow-x: hidden; */
 }
 
-/* Šis pseudo-element užpildys VISĄ ekraną + overflow sritis */
+
 /* body::before {
   content: '';
   position: fixed;
-  top: -100vh;  /* Išplečiame aukščiau už ekraną */
+  top: -100vh; 
   left: 0;
   width: 100vw;
-  height: 300vh; /* Daug aukščio */
+  height: 300vh; /* Daug aukščio
   background: linear-gradient(
     180deg,
     #F4ECE9 0%,
-    #F4ECE9 33.33%, /* Pirmas trečdalis viršutinė spalva */
+    #F4ECE9 33.33%,
     #E9DFDD 40%,
     #AE9982 100%
   );
@@ -47,12 +47,3 @@ body {
         }
 
 
-/* Layout.module.css */
-.container {
-  position: relative;
-  min-height: 100vh;
-  min-height: 100dvh;
-  z-index: 1;
-  padding-top: env(safe-area-inset-top, 0);
-  padding-bottom: env(safe-area-inset-bottom, 0);
-}
