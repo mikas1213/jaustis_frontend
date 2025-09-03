@@ -1,42 +1,58 @@
+/* globals.css arba index.css */
 html {
-  background: linear-gradient(
-    180deg,
-    #F4ECE9 0%,
-    #F4ECE9 20%,
-    #E9DFDD 30%,
-    #AE9982 100%
-  ) fixed;
-  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: linear-gradient(
-    180deg,
-    #F4ECE9 0%,
-    #F4ECE9 20%,
-    #E9DFDD 30%,
-    #AE9982 100%
-  ) fixed;
+  height: 100%;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  min-height: 100dvh;
+  position: relative;
+  /* overflow-x: hidden; */
 }
 
-/* Papildomas overflow fix */
-body::before {
+/* Šis pseudo-element užpildys VISĄ ekraną + overflow sritis */
+/* body::before {
   content: '';
   position: fixed;
-  top: -100vh;
+  top: -100vh;  /* Išplečiame aukščiau už ekraną */
   left: 0;
   width: 100vw;
-  height: 200vh;
+  height: 300vh; /* Daug aukščio */
   background: linear-gradient(
     180deg,
     #F4ECE9 0%,
-    #F4ECE9 50%,
-    #E9DFDD 60%,
+    #F4ECE9 33.33%, /* Pirmas trečdalis viršutinė spalva */
+    #E9DFDD 40%,
     #AE9982 100%
   );
-  z-index: -1;
+  z-index: -999;
+  pointer-events: none;
+} */
+
+        body:before {
+            background: #92f2f2;
+            content: "";
+            display: block;
+            height: 100vh;
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 1.2rem;
+            z-index: 999;
+        }
+
+
+/* Layout.module.css */
+.container {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  z-index: 1;
+  padding-top: env(safe-area-inset-top, 0);
+  padding-bottom: env(safe-area-inset-bottom, 0);
 }
