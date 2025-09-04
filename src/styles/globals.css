@@ -4,3 +4,27 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+  /* background-color: hsl(29, 22%, 79%); */
+  
+  /* background-color: hsl(35, 24%, 82%); */
+  
+  /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+  /* padding-top: env(safe-area-inset-top); */
+}
+
+/* body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top, 20px);
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  z-index: 9999;
+} */

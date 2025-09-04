@@ -1,11 +1,22 @@
-import Navbar from '../navbar/Navbar';
+import styles from './Header.module.css';
 
-const Header = () => {
+import type { ReactElement } from 'react';
+import Navbar from '../navbar/Navbar';
+import useScrollDirection from '../../../hooks/useScrollDirection';
+import { importImageURL } from '../../../utils/importImage';
+
+const Header = (): ReactElement => {
+    const isVisible: boolean = useScrollDirection(86);
+    const headerStyle = `${styles.header} ${isVisible ? styles.visible : styles.hidden}`;
+    const img = importImageURL('../assets/svg/1.svg');
+
     return (
-        <>
-            logo
+        <header 
+            // className={headerStyle}
+        >
+            <img src={img} alt='jaustis-logo' />
             <Navbar />
-        </>
+        </header>
     );
 };
 

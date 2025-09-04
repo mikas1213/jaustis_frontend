@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -6,21 +6,20 @@
 	background-color: #fff;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	z-index: 1000;
-
-	/* Pagrindinis animacijos trickας */
 	transform: translateY(0);
-	transition: transform 0.2s ease-in-out;
-}
+} */
 
-.navbar.hidden {
-	transform: translateY(-100%); /* Stumia navbar už ekrano ribų */
+/* .navbar.hidden {
+	transform: translateY(-100%);
+    transition: transform 0.15s ease-in;
 }
 
 .navbar.visible {
-	transform: translateY(0); /* Grąžina į pradinę poziciją */
-}
+	transform: translateY(0);
+    transition: transform 0.15s ease-out;
+} */
 
-.nav-content {
+/* .nav-content {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 1rem 2rem;
@@ -46,4 +45,4 @@
 
 .nav-content li:hover {
 	background-color: #f0f0f0;
-}
+} */

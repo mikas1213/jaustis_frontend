@@ -1,12 +1,16 @@
-import bgr from '../../assets/images/homepage/background.jpg';
+// import bgr from '../../assets/images/homepage/background.jpg';
+// import styles from './HomePage.module.css';
+import { useEffect, useState } from 'react';
+import HeroSection from '../../features/client/home/components/herosection';
+import StatisticsSection from '../../features/client/home/components/statisticssection';
 
 const HomePage = () => {
-    return (
+	return (
         <>
-            Home page
-            <img src={bgr} alt="" />
+            <HeroSection />
+            <StatisticsSection />
         </>
-    );
+	);
 };
 
 export default HomePage;
