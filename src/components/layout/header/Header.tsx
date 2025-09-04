@@ -12,7 +12,7 @@ const Header = (): ReactElement => {
 
     return (
         <header 
-            // className={headerStyle}
+            className={headerStyle}
         >
             <img src={img} alt='jaustis-logo' />
             <Navbar />

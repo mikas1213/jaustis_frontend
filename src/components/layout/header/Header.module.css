@@ -1,4 +1,4 @@
-.header {
+/* .header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -16,4 +16,8 @@
 .header.visible {
 	transform: translateY(0);
     transition: transform 0.3s ease-out;
+} */
+
+.header {
+    
 }
