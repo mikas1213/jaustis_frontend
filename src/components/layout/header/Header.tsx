@@ -16,6 +16,7 @@ const Header = (): ReactElement => {
         >
             <img src={img} alt='jaustis-logo' />
             <Navbar />
+            <div className={styles.test}>test</div>
         </header>
     );
 };

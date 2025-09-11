@@ -1,3 +1,102 @@
 :root {
-    --layout-width: 1200px;
+	--layout-width: 1200px;
+
+	/* -F-O-N-T-S- */
+	/* 
+    --font-size-xs: clamp(0.8rem, 0.75rem + 0.2vw, 0.833rem);
+	--font-size-sm: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+	--font-size-md: clamp(1.125rem, 1rem + 0.5vw, 1.25rem); 
+	--font-size-lg: clamp(1.4rem, 1.25rem + 0.5vw, 1.5625rem); 
+	--font-size-xl: clamp(1.75rem, 1.5rem + 0.5vw, 1.953rem); 
+	--font-size-2xl: clamp(2.187rem, 1.75rem + 1vw, 2.441rem); 
+	--font-size-3xl: clamp(2.734rem, 2.25rem + 1vw, 3.052rem); 
+	--font-size-4xl: clamp(3.417rem, 2.75rem + 1vw, 3.815rem); 
+	--font-size-5xl: clamp(4.271rem, 3.5rem + 1vw, 4.768rem); 
+	--font-size-6xl: clamp(5.339rem, 4.25rem + 1vw, 5.96rem);  
+    */
+
+	--font-size-12: 0.75rem; /* 12px */
+	--font-size-14: 0.875rem; /* 14px */
+	--font-size-16: 1rem; /* 16px */
+	--font-size-18: 1.125rem; /* 18px */
+	--font-size-20: 1.25rem; /* 20px */
+	--font-size-24: 1.5rem; /* 24px */
+	--font-size-30: 1.875rem; /* 30px */
+	--font-size-36: 2.25rem; /* 36px */
+	--font-size-48: 3rem; /* 48px */
+	--font-size-60: 3.75rem; /* 60px */
+	--font-size-96: 6rem; /* 96px */
+
+
+	/* -C-O-L-O-U-R-S- */
+
+    /* Main colours*/
+	--neutral-grey-900: hsl(0, 0%, 28%); 
+	--neutral-grey-700: hsl(0, 0%, 43%);
+	--neutral-grey-500: hsl(0, 0%, 58%);
+	--neutral-grey-300: hsl(0, 0%, 76%);
+	--neutral-grey-100: hsl(0, 0%, 88%);
+
+	--cool-grey-900: hsl(209, 15%, 28%);
+	--cool-grey-700: hsl(207, 12%, 43%);
+	--cool-grey-500: hsl(208, 12%, 58%);
+	--cool-grey-300: hsl(210, 16%, 76%);
+	--cool-grey-100: hsl(208, 21%, 88%);
+
+    --warm-grey-900: hsl(41, 15%, 28%);
+    --warm-grey-700: hsl(40, 12%, 43%);
+    --warm-grey-500: hsl(39, 12%, 58%);
+    --warm-grey-300: hsl(39, 16%, 76%);
+    --warm-grey-100: hsl(39, 21%, 88%);
+
+    /* Figma project colours */
+    --black: hsl(168, 46%, 10%);
+
+    --true-grey-700: hsl(0, 0%, 37%);
+    --true-grey-500: hsl(0, 0%, 50%);
+    --true-grey-300: hsl(0, 0%, 73%);
+    --true-grey-100: hsl(0, 0%, 94%);
+
+    --dark-green: hsl(176, 98%, 19%);
+
+    --white-bgr: hsl(10, 33%, 99%);
+    --white-80: hsla(0, 0%, 100%, 0.8);
+    --white-40: hsla(0, 0%, 100%, 0.4);
+
+    /* Accents */
+    --accent-orange: hsl(27, 82%, 50%);    
+    --accent-gold: hsl(38, 74%, 62%);
+    --accent-peach: hsl(25, 59%, 89%);
+    --accent-mint: hsl(177, 23%, 84%);
+    --accent-sky: hsl(210, 52%, 89%);
+
+    /* -S-H-A-D-O-W-S- */
+    --button-grey-shadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.8));
+    --button-green-shadow: drop-shadow(0px 4px 15px rgba(0, 79, 25, 0.2));
+    --button-orange-shadow: drop-shadow(0px 4px 15px rgba(230, 126, 34, 0.2));
+
+    --plan-icon-orange-shadow: drop-shadow(0px 4px 15px rgba(230, 126, 34, 0.2));
+    --plan-icon-green-shadow: drop-shadow(0px 4px 15px rgba(0, 79, 25, 0.2));
+    --plan-icon-blue-shadow: drop-shadow(0px 4px 15px rgba(45, 118, 176, 0.2));
+
+    --modal-shadow: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.2));
+    --cart-session-card-shadow: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.04));
+    --user-session-card-shadow: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.05));
+
+    /* -B-O-R-D-E-R---R-A-D-I-U-S- */
+    --br-2: 2px;
+    --br-4: 4px;
+    --br-8: 8px;
+    --br-12: 12px;
+    --br-16: 16px;
+    --br-100: 100px;
+
+    /* -G-A-P-S- */
+    --gap-2: 2px;
+    --gap-4: 4px;
+    --gap-8: 8px;
+    --gap-16: 16px;
+    --gap-24: 24px;
+    --gap-32: 32px;
+
 }
