@@ -11,12 +11,9 @@ const Header = (): ReactElement => {
     const img = importImageURL('../assets/svg/1.svg');
 
     return (
-        <header 
-            className={headerStyle}
-        >
+        <header className={headerStyle}>
             <img src={img} alt='jaustis-logo' />
             <Navbar />
-            <div className={styles.test}>test</div>
         </header>
     );
 };
