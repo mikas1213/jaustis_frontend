@@ -1,4 +1,4 @@
-import styles from './Navbar.module.css';
+// import styles from './Navbar.module.css';
 import { type ReactElement } from 'react';
 
 const Navbar = (): ReactElement => {
