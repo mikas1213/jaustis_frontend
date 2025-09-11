@@ -49,6 +49,7 @@
     --warm-grey-300: hsl(39, 16%, 76%);
     --warm-grey-100: hsl(39, 21%, 88%);
 
+
     /* Figma project colours */
     --black: hsl(168, 46%, 10%);
 
@@ -63,12 +64,13 @@
     --white-80: hsla(0, 0%, 100%, 0.8);
     --white-40: hsla(0, 0%, 100%, 0.4);
 
-    /* Accents */
+    /* Accents colours */
     --accent-orange: hsl(27, 82%, 50%);    
     --accent-gold: hsl(38, 74%, 62%);
     --accent-peach: hsl(25, 59%, 89%);
     --accent-mint: hsl(177, 23%, 84%);
     --accent-sky: hsl(210, 52%, 89%);
+
 
     /* -S-H-A-D-O-W-S- */
     --button-grey-shadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.8));
@@ -83,6 +85,7 @@
     --cart-session-card-shadow: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.04));
     --user-session-card-shadow: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.05));
 
+
     /* -B-O-R-D-E-R---R-A-D-I-U-S- */
     --br-2: 2px;
     --br-4: 4px;
@@ -90,6 +93,7 @@
     --br-12: 12px;
     --br-16: 16px;
     --br-100: 100px;
+
 
     /* -G-A-P-S- */
     --gap-2: 2px;
