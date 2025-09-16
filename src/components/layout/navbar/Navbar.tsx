@@ -1,19 +1,30 @@
-// import styles from './Navbar.module.css';
+import styles from './Navbar.module.css';
 
-const Navbar = () => {
- 
+import { type ReactNode } from 'react';
+import { Link } from 'react-router';
 
+interface NavProps { children: ReactNode };
+interface ItemProps extends NavProps {
+    to: string,
+    active?: boolean
+}
+
+const Navbar = ({ children }: NavProps) => {
 	return (
-		<nav>
-			<div className='navContent'>
-				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Contact</li>
-				</ul>
-			</div>
+		<nav className={styles.navbar}>
+			<ul className={styles.navbarMenu}>{children}</ul>
 		</nav>
 	);
 };
+
+const Item = ({ children, to, active}: ItemProps) => {
+    return (
+        <li className={`${styles.navbarItem} ${active ? styles.active : ''}`}>
+            <Link to={to}>{children}</Link>
+        </li>
+    );
+};
+
+Navbar.Item = Item;
 
 export default Navbar;
