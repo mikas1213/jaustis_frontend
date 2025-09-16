@@ -2,18 +2,6 @@
 	--layout-width: 1200px;
 
 	/* -F-O-N-T-S- */
-	/* 
-    --font-size-xs: clamp(0.8rem, 0.75rem + 0.2vw, 0.833rem);
-	--font-size-sm: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
-	--font-size-md: clamp(1.125rem, 1rem + 0.5vw, 1.25rem); 
-	--font-size-lg: clamp(1.4rem, 1.25rem + 0.5vw, 1.5625rem); 
-	--font-size-xl: clamp(1.75rem, 1.5rem + 0.5vw, 1.953rem); 
-	--font-size-2xl: clamp(2.187rem, 1.75rem + 1vw, 2.441rem); 
-	--font-size-3xl: clamp(2.734rem, 2.25rem + 1vw, 3.052rem); 
-	--font-size-4xl: clamp(3.417rem, 2.75rem + 1vw, 3.815rem); 
-	--font-size-5xl: clamp(4.271rem, 3.5rem + 1vw, 4.768rem); 
-	--font-size-6xl: clamp(5.339rem, 4.25rem + 1vw, 5.96rem);  
-    */
 
 	--font-size-12: 0.75rem; /* 12px */
 	--font-size-14: 0.875rem; /* 14px */
@@ -26,6 +14,18 @@
 	--font-size-48: 3rem; /* 48px */
 	--font-size-60: 3.75rem; /* 60px */
 	--font-size-96: 6rem; /* 96px */
+
+    --ratio: 1.5;
+    --font-s-2: calc(var(--font-s-1) / var(--ratio));
+    --font-s-1: calc(var(--font-s0) / var(--ratio));
+    --font-s0: 1rem;
+    --font-s1: calc(var(--font-s0) * var(--ratio));
+    --font-s2: calc(var(--font-s1) * var(--ratio));
+    --font-s3: calc(var(--font-s2) * var(--ratio));
+    --font-s4: calc(var(--font-s3) * var(--ratio));
+    --font-s5: calc(var(--font-s4) * var(--ratio));
+    --font-s6: calc(var(--font-s5) * var(--ratio));
+    --font-s7: calc(var(--font-s6) * var(--ratio));
 
 
 	/* -C-O-L-O-U-R-S- */
@@ -86,6 +86,19 @@
     --user-session-card-shadow: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.05));
 
 
+
+    /* -S-P-A-C-I-N-G- */
+    --s-0: 0;
+    --s-4: 0.25rem;
+    --s-8: 0.5rem;
+    --s-12: 0.75rem;
+    --s-16: 1rem;
+    --s-24: 1.5rem;
+    --s-32: 2rem;
+    --s-48: 3rem;
+    --s-56: 3.5rem;
+
+
     /* -B-O-R-D-E-R---R-A-D-I-U-S- */
     --br-2: 2px;
     --br-4: 4px;
@@ -93,13 +106,4 @@
     --br-12: 12px;
     --br-16: 16px;
     --br-100: 100px;
-
-
-    /* -G-A-P-S- */
-    --gap-2: 2px;
-    --gap-4: 4px;
-    --gap-8: 8px;
-    --gap-16: 16px;
-    --gap-24: 24px;
-    --gap-32: 32px;
 }

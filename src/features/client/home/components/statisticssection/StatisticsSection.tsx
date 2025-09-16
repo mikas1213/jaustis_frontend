@@ -1,77 +1,13 @@
 import styles from './StatisticsSection.module.css';
-
+import { Switcher } from '../../../../../components/ui';
 const StatisticsSection = () => {
 	return (
-		<section 
-            className={styles.statisticsSection} 
-            // style={{ position: 'relative', zIndex: 3, background: '#fff' }}
-        >
-			<h2>Čia prasideda kita sekcija</h2>
-
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-			<p>StatisticsSection</p>
-		</section>
-	);
+        <section className={styles.statistion}>
+            <Switcher limit={4}>
+                <div>yra</div>
+            </Switcher>
+        </section>
+    );
 };
 
 export default StatisticsSection;

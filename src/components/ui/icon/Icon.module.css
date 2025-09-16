@@ -1,0 +1,22 @@
+.icon {
+	display: inline-flex;
+	align-items: baseline;
+}
+
+.icon svg {
+	height: 0.75em;
+	width: 0.75em;
+    fill: currentColor;
+    margin-inline-end: var(--icon-space, 0.5em);
+    transform: scale(1);
+}
+
+.cap svg {
+    height: 1cap;
+    width: 1cap;
+}
+
+.ex svg {
+    height: 1ex;
+    width: 1ex;
+}

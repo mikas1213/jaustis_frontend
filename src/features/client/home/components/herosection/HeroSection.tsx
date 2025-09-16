@@ -23,8 +23,8 @@ const HeroSection = (): ReactElement => {
 	return (
 		<section className={styles.heroSection}>
 			<div className={styles.parallaxContainer}>
-				<div className={styles.backgroundImage} data-parallax='0.5' />
-				<div className={styles.textOverlay} data-parallax='0.8'>
+				<div className={styles.backgroundImage} data-parallax='0.0' />
+				<div className={styles.textOverlay} data-parallax='0.1'>
 					<h1>Tavo tekstas čia</h1>
 					<h2>Kitas tavo tekstas</h2>
 					<h3>Kitas tavo tekstas</h3>
