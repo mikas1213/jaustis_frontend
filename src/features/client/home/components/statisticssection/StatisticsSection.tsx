@@ -4,7 +4,31 @@ const StatisticsSection = () => {
 	return (
         <section className={styles.statistion}>
             <Switcher limit={4}>
-                <div>yra</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+                <div className="item">itemai cia visokie bus</div>
+
+
+
             </Switcher>
         </section>
     );

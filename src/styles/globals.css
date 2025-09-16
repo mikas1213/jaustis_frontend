@@ -1,4 +1,4 @@
-@import './variables.css';
+@import './header-variables.css';
 @import './utils.css';
 
 *, *::before, *::after {
@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
+/* body {
+    background-color: #000;
+} */
 
 /* 
     font-family: "Cormorant Garamond", serif;

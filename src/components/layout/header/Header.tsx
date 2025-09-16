@@ -1,22 +1,28 @@
 import styles from './Header.module.css';
-import type { ReactElement } from 'react';
-
 import useScrollDirection from '../../../hooks/useScrollDirection';
-import Navbar from '../navbar/Navbar';
+
 import { JaustisLogo } from '../../ui/icons';
+import Navbar from '../navbar/Navbar';
+import { Cluster, Container } from '../../ui';
 
-// import { importImageURL } from '../../../utils/importImage';
-
-const Header = (): ReactElement => {
+const Header = () => {
     const isVisible: boolean = useScrollDirection(286);
-    const headerStyle = `${styles.header} ${isVisible ? styles.visible : styles.hidden}`;
-    // const img = importImageURL('../assets/svg/1.svg');
+    const isVisibleStyle = `${isVisible ? styles.visible : styles.hidden}`;
 
-    return (
-        <header className={headerStyle}>
-            {/* <img src={img} alt='jaustis-logo' /> */}
-            <JaustisLogo width='200px'/>
-            <Navbar />
+    const logoClasses = [
+        styles.logoSize,
+        isVisible ? styles.visible : styles.hidden
+    ].join(' ');
+
+    return (        
+        <header className={styles.header}>
+            <Container padding='0'>
+                <Cluster justify='space-between' align='center'>
+                    <JaustisLogo className={logoClasses} />
+                    <Navbar />
+                    <div className={isVisibleStyle}>Cia bus icons</div>
+                </Cluster>
+            </Container>
         </header>
     );
 };
