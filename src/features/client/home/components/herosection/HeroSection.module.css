@@ -6,39 +6,33 @@
 	background-size: 120% auto;
 	background-position: 0% 60%;
 	background-repeat: no-repeat;
-
-	
-	/* background-attachment: fixed; */
-
-	/* overflow: hidden; */
-	/* position: relative; */
 }
 
-.backgroundCover {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background-color: #000; */
-
-    /* opacity: 0; */
-	animation: heroFadeIn 1s ease-out forwards;
-
+@media only screen and (max-width: 1087px) {
+    .heroSection {
+        background-position: 0% 0%;
+    }
 }
 
+@media only screen and (min-width: 2500px) {
+    .heroSection {
+        background-position: 0% 40%;
+    }
+}
+
+/* 
 @keyframes heroFadeIn {
 	from {
-		/* opacity: 0; */
+		opacity: 0;
 
-        /* background-color: #000; */
+        background-color: #000;
 	}
 	to {
-		/* opacity: 1; */
+		opacity: 1;
 
-        /* background-color: transparent; */
+        background-color: transparent;
 	}
-}
+} */
 
 /* .parallaxContainer { */
 /* height: 100vh; */

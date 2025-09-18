@@ -1,9 +1,9 @@
 .center {
     box-sizing: content-box;
 	margin-inline: auto;
-	max-inline-size: var(--measure, 65ch);
-    padding-inline-start: var(--s-0);
-    padding-inline-end: var(--s-0);
+	max-inline-size: var(--maxWidth, 65ch);
+    padding-inline-start: var(--padding-lr);
+    padding-inline-end: var(--padding-lr);
 }
 .textCenter {
     text-align: center;

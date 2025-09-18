@@ -15,7 +15,7 @@ i18next
 	.use(initReactI18next)
     .use(LanguageDetector)
 	.init({
-		lng: 'lt',
+		// lng: 'lt',
 		fallbackLng: 'lt',
 		debug: false,
 		resources,
@@ -39,6 +39,7 @@ i18next
 
 			caches: ['localStorage', 'cookie'],
 		},
+        supportedLngs: ['lt', 'en', 'no'],
 	});
 
 export default i18next;

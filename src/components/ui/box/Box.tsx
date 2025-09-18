@@ -19,7 +19,7 @@ type BoxProps = {
     className?: string
 };
 
-const Box = ({ children, padding = ['0'], borderWidth = '0px', className = '', }: BoxProps) => {
+const Box = ({ children, padding = ['0'], borderWidth = '0', className = '', }: BoxProps) => {
     
     const tb: string = padding[0];
     const lr: string = padding.length === 2 ? padding[1] : tb;

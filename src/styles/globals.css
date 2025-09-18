@@ -10,10 +10,34 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    /* color-scheme: dark; */
 }
 
-/* body {
-    background-color: #000;
+a {
+    text-decoration: none;
+}
+
+body {
+    /* background-color: hsl(6, 33%, 94%); */
+    /* background-color: hsl(28, 23% 87%); */
+    /* background-color: hsla(22, 24%, 79%, 0.45); */
+    background-color: hsl(27, 27%, 84%);
+    /* background-color: hsl(21, 25%, 82%); */
+}
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    background-image: url('../assets/images/homepage/bgr_2443x1677.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 } */
 
 /* 

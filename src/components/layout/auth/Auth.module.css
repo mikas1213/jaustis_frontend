@@ -1,0 +1,21 @@
+.auth {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    background-color: var(--accent-orange);
+
+    height: var(--nav-height);
+    width: var(--nav-height);
+    border-radius: var(--br-100);    
+    transition: background-color var(--bg-fade-time) ease;
+    
+}
+
+.auth:hover {
+    background-color: var(--accent-orange-tr);
+}
+.personIcon {
+    color: var(--nan-item-color);
+    font-size: var(--font-32);
+}
+

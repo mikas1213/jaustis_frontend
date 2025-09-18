@@ -4,20 +4,20 @@
     left: 50%;
     transform: translateX(-50%);
 	top: var(--header-top-margin);
-	/* background-color: #ffffff77; */
 	z-index: 1000;
 }
 
 .logoSize {
     width: var(--logo-size);
 }
+
 .hidden {
 	transform: translateY(-120px);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease;
 }
 .visible {
 	transform: translateY(0);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease;
 }
 
 

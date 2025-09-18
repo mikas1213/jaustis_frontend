@@ -2,6 +2,7 @@ import styles from './Navbar.module.css';
 
 import { type ReactNode } from 'react';
 import { Link } from 'react-router';
+import { Cluster } from '../../ui';
 
 interface NavProps { children: ReactNode };
 interface ItemProps extends NavProps {
@@ -11,9 +12,9 @@ interface ItemProps extends NavProps {
 
 const Navbar = ({ children }: NavProps) => {
 	return (
-		<nav className={styles.navbar}>
-			<ul className={styles.navbarMenu}>{children}</ul>
-		</nav>
+        <Cluster as='nav' className={styles.navbar}>
+            <ul className={styles.navbarMenu}>{children}</ul>
+        </Cluster>
 	);
 };
 

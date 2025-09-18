@@ -1,0 +1,63 @@
+.languageToggle {
+    z-index: -2;
+    height: var(--nav-height);
+    background-color: var(--lang-switch-color);    
+    border-radius: var(--br-100);
+    font-family: 'Rubik', sans-serif;
+	font-optical-sizing: auto;
+    padding-block: var(--s-4);
+    padding-inline: var(--s-4);
+    user-select: none;
+}
+.languages {
+    position: relative;
+    height: 100%;
+}
+.languages::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    transition: left 0.15s ease, border-radius 0.15s ease;
+    background-color: var(--white-60);
+}
+.language1::after { width: calc(100% / 1); }
+.language2::after { width: calc(100% / 2); }
+.language3::after { width: calc(100% / 3); }
+.language4::after { width: calc(100% / 4); }
+
+:is(.language1, .language2, .language3).lang1::after { left: 0%; }
+.language2.lang2::after { left: calc(100% / 2); }
+.language3.lang2::after { left: calc(100% / 3); }
+.language3.lang3::after { left: calc(100% / 3*2); }
+.language4.lang2::after { left: calc(100% / 4); }
+.language4.lang3::after { left: calc(100% / 4*2); }
+.language4.lang4::after { left: calc(100% / 4*3); }
+
+.language1.lang1::after { border-radius: var(--br-20); }
+.lang1::after { border-radius: var(--br-20) 0 0 var(--br-20); }
+.language2.lang2::after { border-radius: 0 var(--br-20) var(--br-20) 0; }
+.lang3::after { border-radius: 0 var(--br-20) var(--br-20) 0; }
+
+.flag {
+    cursor: pointer;
+    padding-inline: var(--s-20);    
+    font-size: var(--font-25);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: background-color var(--bg-fade-time) ease;
+}
+
+.language3 .flag { padding-inline: var(--s-12); }
+.language4 .flag { padding-inline: var(--s-8); }
+
+.flag:not(.choosedLng):first-child {
+    border-radius: var(--br-20) 0 0 var(--br-20);
+}
+.flag:not(.choosedLng):last-child {
+    border-radius: 0 var(--br-20) var(--br-20) 0;
+}
+.flag:not(.choosedLng):hover {
+    background-color: var(--white-20);
+}

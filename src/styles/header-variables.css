@@ -1,5 +1,14 @@
 :root {
-    --header-top-margin: var(--s-56);
+    --header-top-margin: var(--s-32);
     --logo-size: var(--s-128);
 
+    --nav-item-font-size: var(--font-20);
+    --nav-item-gap: var(--s-24);
+    --nav-height: var(--font-48);
+    --nav-pad: var(--font-32);
+    --nav-bgr-color: var(--true-grey-950);
+    --nan-item-color: var(--white-100);
+
+    --auth-bgr-color: var(--true-grey-950);
+    --lang-switch-color: var(--true-grey-950);
 }

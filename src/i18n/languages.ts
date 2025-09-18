@@ -1,14 +1,15 @@
 type Language = {
-	name: 'LT' | 'EN' | 'NO';
+    id: number,
+	name: 'LT' | 'EN';
     icon: string;
 };
 
-type LanguageCode = 'lt' | 'en' | 'no';
+type LanguageCode = 'lt' | 'en';
 
 
 export const languages: Record<LanguageCode, Language> = {
-	lt: { name: 'LT', icon: '🇱🇹' },
-	en: { name: 'EN', icon: '🇬🇧' },
-	no: { name: 'NO', icon: '🇳🇴' }
+	lt: { id: 1, name: 'LT', icon: '🇱🇹' },
+	en: { id: 2, name: 'EN', icon: '🇬🇧' }
+	// no: { id: 3, name: 'NO', icon: '🇳🇴' }
 };
  

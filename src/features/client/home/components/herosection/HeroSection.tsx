@@ -1,6 +1,6 @@
 import styles from './HeroSection.module.css';
 import { useEffect, type ReactElement } from 'react';
-import { Container } from '../../../../../components/ui';
+import { Container, Center } from '../../../../../components/ui';
 
 const HeroSection = (): ReactElement => {
 
@@ -23,6 +23,9 @@ const HeroSection = (): ReactElement => {
 
 	return (
 		<section className={styles.heroSection}>
+            <Container padding='0'>
+                asdf
+            </Container>
         {/* //     <div className={styles.backgroundCover}/>
 		// 	<div className={styles.parallaxContainer}>
 		// 		<div className={styles.backgroundImage} data-parallax='0.0' />
