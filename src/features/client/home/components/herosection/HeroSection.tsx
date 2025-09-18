@@ -1,6 +1,6 @@
 import styles from './HeroSection.module.css';
 import { useEffect, type ReactElement } from 'react';
-import { Container, Center } from '../../../../../components/ui';
+import { Container } from '../../../../../components/ui';
 
 const HeroSection = (): ReactElement => {
 
