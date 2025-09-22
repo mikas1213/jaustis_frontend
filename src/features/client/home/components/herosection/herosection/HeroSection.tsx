@@ -1,7 +1,7 @@
 import styles from './HeroSection.module.css';
 import { useEffect, type ReactElement } from 'react';
-import { Container, Stack } from '../../../../../components/ui';
-import Headline from './Headline';
+import { Container, Stack } from '../../../../../../components/ui';
+import Headline from '../headline';
 
 const HeroSection = (): ReactElement => {
 

@@ -1,7 +1,7 @@
 .heroSection {
     position: relative;
 	height: 896px;
-	background-image: url('../../../../../assets/images/homepage/bgr_2443x1677.webp');
+	background-image: url('../../../../../../assets/images/homepage/bgr_2443x1677.webp');
 	background-size: cover;
 	background-size: 120% auto;
 	background-position: 0% 60%;

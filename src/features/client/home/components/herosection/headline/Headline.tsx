@@ -1,6 +1,6 @@
 import styles from './Headline.module.css';
 import { useState, useEffect } from 'react';
-import { Cluster, Stack, Box } from '../../../../../components/ui';
+import { Cluster, Stack, Box } from '../../../../../../components/ui';
 import { useTranslation } from 'react-i18next';
 
 const Headline = ({ className = ''}) => {

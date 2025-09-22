@@ -1,5 +1,5 @@
-import HeroSection from '../../features/client/home/components/herosection';
-import StatisticsSection from '../../features/client/home/components/statisticssection';
+import { HeroSection, StatisticsSection } from '../../features/client/home/components';
+
 
 const HomePage = () => {
 	return (
