@@ -21,8 +21,18 @@ type BoxProps = {
 
 const Box = ({ children, padding = ['0'], borderWidth = '0', className = '', }: BoxProps) => {
     
-    const tb: string = padding[0];
-    const lr: string = padding.length === 2 ? padding[1] : tb;
+    type PaddingArray = string[];
+    const normalizePadding = (p: PaddingArray): [string, string, string, string] => {
+        switch(p.length) {
+            case 1: return [p[0], p[0], p[0], p[0]];
+            case 2: return [p[0], p[1], p[0], p[1]];
+            case 3: return [p[0], p[1], p[2], p[1]];
+            case 4: return [p[0], p[1], p[2], p[3]];
+            default: return ['0', '0', '0', '0'];
+        }
+    };
+
+    const [t, r, b, l] = normalizePadding(padding);
 
     const boxClasses = [
         styles.box,
@@ -30,8 +40,10 @@ const Box = ({ children, padding = ['0'], borderWidth = '0', className = '', }: 
     ].filter(Boolean).join(' ');
     
     const boxStyle = {
-        '--padding-top-bottom': tb,
-        '--padding-left-right': lr,
+        '--pad-t': t,
+        '--pad-r': r,
+        '--pad-b': b,
+        '--pad-l': l,
         '--border-width': borderWidth,
     } as CSSProperties;
 

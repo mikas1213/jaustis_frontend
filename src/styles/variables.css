@@ -1,22 +1,7 @@
 :root {
 	--layout-width: 1200px;
 
-	/* -F-O-N-T---S-I-Z-E- */
-    --ratio: 1.25;
-    --font-10: calc(var(--font-12) / var(--ratio)); /* 10.24px */
-    --font-12: calc(var(--font-16) / var(--ratio)); /* 12.8px  */
-    --font-16: 1rem;                                /* 16px    */
-    --font-20: calc(var(--font-16) * var(--ratio)); /* 20px    */
-    --font-25: calc(var(--font-20) * var(--ratio)); /* 25px    */
-    --font-32: calc(var(--font-25) * var(--ratio)); /* 31.25px */
-    --font-40: calc(var(--font-32) * var(--ratio)); /* 39.06px */
-    --font-48: calc(var(--font-40) * var(--ratio)); /* 48.83px */
-    --font-60: calc(var(--font-48) * var(--ratio)); /* 61.04px */
-    --font-76: calc(var(--font-60) * var(--ratio)); /* 76.29px */
-    --font-96: calc(var(--font-76) * var(--ratio)); /* 95.37px */
-
-
-	/* -C-O-L-O-U-R-S- */
+    /* -C-O-L-O-U-R-S- */
     /* Main colours*/
 	--neutral-grey-900: hsl(0, 0%, 28%); 
 	--neutral-grey-700: hsl(0, 0%, 43%);
@@ -67,6 +52,21 @@
     --accent-peach: hsl(25, 59%, 89%);
     --accent-mint: hsl(177, 23%, 84%);
     --accent-sky: hsl(210, 52%, 89%);
+
+    
+	/* -F-O-N-T---S-I-Z-E- */
+    --ratio: 1.25;
+    --font-10: calc(var(--font-12) / var(--ratio)); /* 10.24px */
+    --font-12: calc(var(--font-16) / var(--ratio)); /* 12.8px  */
+    --font-16: 1rem;                                /* 16px    */
+    --font-20: calc(var(--font-16) * var(--ratio)); /* 20px    */
+    --font-25: calc(var(--font-20) * var(--ratio)); /* 25px    */
+    --font-32: calc(var(--font-25) * var(--ratio)); /* 31.25px */
+    --font-40: calc(var(--font-32) * var(--ratio)); /* 39.06px */
+    --font-48: calc(var(--font-40) * var(--ratio)); /* 48.83px */
+    --font-60: calc(var(--font-48) * var(--ratio)); /* 61.04px */
+    --font-76: calc(var(--font-60) * var(--ratio)); /* 76.29px */
+    --font-96: calc(var(--font-76) * var(--ratio)); /* 95.37px */
 
 
     /* -S-H-A-D-O-W-S- */

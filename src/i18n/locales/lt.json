@@ -9,5 +9,15 @@
         "signup": "Registruotis",
         "signin": "Prisijungti",
         "logout": "Atsijungti"
+    },
+
+    "headline": {
+        "tagline": "TAVO PROFESIONALUS TERAPEUTAS",
+        "titleA": "Padės",
+        "titleB": "Tau",
+        "titleC": "rasti",
+        "titleD": "atsakymą"
     }
+
+    
 }

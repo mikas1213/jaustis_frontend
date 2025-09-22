@@ -1,20 +1,18 @@
 import styles from './HeroSection.module.css';
 import { useEffect, type ReactElement } from 'react';
-import { Container } from '../../../../../components/ui';
+import { Container, Stack } from '../../../../../components/ui';
+import Headline from './Headline';
 
 const HeroSection = (): ReactElement => {
 
     useEffect(() => {
+
         const handleScroll = (): void => {
+            const parallaxElement = document.querySelector(`.${styles.headline}`) as HTMLElement;
             const scrolled: number = window.pageYOffset;
-            const parallaxElements = document.querySelectorAll('[data-parallax]') as NodeListOf<HTMLElement>;
-
-            parallaxElements.forEach(el => {
-                const speed: number = parseFloat(el.dataset.parallax || '0');
-                const yPos: number = -(scrolled * speed);
-                el.style.transform = `translateY(${yPos}px)`;
-
-            });
+            const speed: number = 0.3;
+            const yPos: number = -(scrolled * speed);
+            parallaxElement.style.transform = `translateY(${yPos}px)`;
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -22,26 +20,14 @@ const HeroSection = (): ReactElement => {
     }, []);
 
 	return (
-		<section className={styles.heroSection}>
+		<Container as='section' maxWidth='100vw' padding='0' className={styles.heroSection}>
             <Container padding='0'>
-                asdf
+                <Stack>
+                    <Headline className={styles.headline} />
+                </Stack>
             </Container>
-        {/* //     <div className={styles.backgroundCover}/>
-		// 	<div className={styles.parallaxContainer}>
-		// 		<div className={styles.backgroundImage} data-parallax='0.0' />
-		// 		<div className={styles.textOverlay} data-parallax='0.1'>
-		// 			<h1>Tavo tekstas čia</h1>
-		// 			<h2>Kitas tavo tekstas</h2>
-		// 			<h3>Kitas tavo tekstas</h3>
-		// 		</div>
-		// 	</div> */}
-		</section>
-//         <section className={styles.heroSection}>
-//             <Container>
-// asf
-//             </Container>
-//         </section>
-	);
+		</Container>
+    )
 };
 
 export default HeroSection;

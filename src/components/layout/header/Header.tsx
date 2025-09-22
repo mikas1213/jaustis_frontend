@@ -11,15 +11,15 @@ import LangToggle from '../langToggle/LangToggle';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
-    const { t } = useTranslation();
-    const isVisible: boolean = useScrollDirection(286);
+    const { t } = useTranslation(); 
+    const isVisible: boolean = useScrollDirection(50);
     const isVisibleStyle = `${isVisible ? styles.visible : styles.hidden}`;
 
     const logoClasses = [
         styles.logoSize,
         isVisibleStyle
     ].join(' ');
-
+    
     return (        
         <header className={styles.header}>
             <Container padding='0'>
@@ -37,7 +37,6 @@ const Header = () => {
                         <LangToggle />
                         <Auth />
                     </Cluster>
-                    
                 </Cluster>
             </Container>
         </header>

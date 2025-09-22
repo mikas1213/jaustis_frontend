@@ -1,5 +1,9 @@
 .box {
-	padding: var(--padding-top-bottom) var(--padding-left-right);
+	padding-top: var(--pad-t);
+    padding-right: var(--pad-r);
+    padding-bottom: var(--pad-b);
+    padding-left: var(--pad-l);
+    
 	border: var(--border-width) solid;
 	border-color: currentColor;
 	background-color: inherit;

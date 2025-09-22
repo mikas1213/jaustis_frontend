@@ -9,5 +9,13 @@
         "signup": "Sign Up",
         "signin": "Sign In",
         "logout": "Log Out"
+    },
+
+    "headline": {
+        "tagline": "YOUR PROFESSIONAL THERAPIST",
+        "titleA": "Will help",
+        "titleB": "You",
+        "titleC": "find",
+        "titleD": "the answer"
     }
 }

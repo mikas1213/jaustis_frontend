@@ -9,5 +9,13 @@
         "signup": "Registrering",
         "signin": "Logg Inn",
         "logout": "Logg Ut"
+    },
+
+    "headline": {
+        "tagline": "DIN PROFESJONELLE TERAPEUT",
+        "titleA": "Vil hjelpe",
+        "titleB": "Deg",
+        "titleC": "å finne",
+        "titleD": "svaret"
     }
 }

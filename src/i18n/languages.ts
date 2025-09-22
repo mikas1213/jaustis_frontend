@@ -1,15 +1,13 @@
 type Language = {
     id: number,
-	name: 'LT' | 'EN';
+	name: 'LT' | 'EN' | 'NO';
     icon: string;
 };
 
-type LanguageCode = 'lt' | 'en';
-
+type LanguageCode = Lowercase<Language['name']>
 
 export const languages: Record<LanguageCode, Language> = {
 	lt: { id: 1, name: 'LT', icon: '🇱🇹' },
-	en: { id: 2, name: 'EN', icon: '🇬🇧' }
-	// no: { id: 3, name: 'NO', icon: '🇳🇴' }
+	en: { id: 2, name: 'EN', icon: '🇬🇧' },
+	no: { id: 3, name: 'NO', icon: '🇳🇴' }
 };
- 
