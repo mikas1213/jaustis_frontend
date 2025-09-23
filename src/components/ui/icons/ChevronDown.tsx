@@ -1,8 +1,4 @@
-import type { SVGProps } from 'react';
-
-type IconProps = {
-	fill?: string;
-} & SVGProps<SVGSVGElement>;
+import { type IconProps } from './types';
 
 const ChevronDown = ({ fill }: IconProps) => {
 	return (

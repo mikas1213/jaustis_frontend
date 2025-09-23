@@ -17,7 +17,20 @@
         "titleB": "Tau",
         "titleC": "rasti",
         "titleD": "atsakymą"
-    }
+    },
 
-    
+    "services": {
+        "psychotherapy": {
+            "title": "Psichoterapija",
+            "body": "Ilgalaikis procesas, padedantis pažinti save giliau, atpažinti elgesio modelius ir keisti juos."
+        },
+        "consulting": {
+            "title": "Konsultavimas",
+            "body": "Trumpesnės trukmės pagalba, orientuota į konkrečių problemų sprendimą. Padeda įveikti krizines."
+        },
+        "session-reservation": {
+            "title": "Sesijos rezervacija",
+            "body": "Patogus būdas užsisakyti pirmąjį ar tolimesnį susitikimą internetu. Konsultacijos vyksta jaukioje."
+        }
+    }
 }

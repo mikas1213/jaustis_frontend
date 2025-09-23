@@ -8,7 +8,6 @@ import styles from './Container.module.css';
  * @param {string} [maxWidth='1200px'] – The maximum width of the container.
  * @param {string} [padding='1rem'] – Horizontal padding applied to the left and right sides.
  * @param {string} [className] – Additional CSS class names to apply to the container.
- * @param {string} [className] – Additional CSS class names to apply to the container.
  */
 
 type ContainerProps = {

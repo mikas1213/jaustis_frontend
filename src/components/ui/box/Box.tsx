@@ -2,13 +2,13 @@ import type { CSSProperties, ReactNode } from 'react';
 import styles from './Box.module.css';
 
 /**
- * Box component for wrapping content with customizable padding, border width, and styling.
- *
- * @param {ReactNode} children – The inner content to be wrapped by the Box.
- * @param {string[]} [padding=['0']] – Padding values:
- *   - If the array contains 1 value → applies to both top/bottom and left/right.
- *   - If the array contains 2 values → interpreted as [top/bottom, left/right].
- * @param {string} [borderWidth='0px'] – CSS border width (e.g. '1px', '2px', '0').
+ * @param {ReactNode} children – The inner content to be rendered inside the Box.
+ * @param {string[]} [padding=['0']] – Padding values applied to the Box:
+ *   - 1 → [top, right, bottom, left].
+ *   - 2 → [top/bottom, left/right].
+ *   - 3 → [top, left/right, bottom].
+ *   - 4 → [top, right, bottom, left].
+ * @param {string} [borderWidth='0'] – CSS border width (e.g. '1px', '2px', '0').
  * @param {string} [className=''] – Additional CSS class names to apply to the Box.
  */
 

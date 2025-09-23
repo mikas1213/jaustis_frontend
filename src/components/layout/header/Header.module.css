@@ -1,6 +1,6 @@
 .header {
 	position: fixed;
-    width: 1200px;
+    width: var(--layout-width);
     left: 50%;
     transform: translateX(-50%);
 	top: var(--header-top-margin);

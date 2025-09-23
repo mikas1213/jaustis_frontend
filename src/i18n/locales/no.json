@@ -15,7 +15,22 @@
         "tagline": "DIN PROFESJONELLE TERAPEUT",
         "titleA": "Vil hjelpe",
         "titleB": "Deg",
-        "titleC": "å finne",
-        "titleD": "svaret"
+        "titleC": "å",
+        "titleD": "finne svaret"
+    },
+
+    "services": {
+        "psychotherapy": {
+            "title": "Psykoterapi",
+            "body": "En langsiktig prosess som hjelper deg med å bli bedre kjent med deg selv, gjenkjenne atferdsmønstre og endre dem."
+        },
+        "consulting": {
+            "title": "Rådgivning",
+            "body": "Kortvarig hjelp fokusert på å løse konkrete problemer. Hjelper med å håndtere krisesituasjoner."
+        },
+        "session-reservation": {
+            "title": "Timebestilling",
+            "body": "En enkel måte å bestille din første eller neste time på nettet. Konsultasjonene foregår i et hyggelig miljø."
+        }
     }
 }

@@ -1,20 +1,6 @@
-:root {
-    --delay: 0.5s;
-}
-
 .baseTagLine {
-    opacity: 0.2; 
     font-weight: 700;
-    transform: translateY(12px);
-    transition: transform var(--delay) ease-out, opacity var(--delay) ease-out;
 }
-
-.baseHeadLine {
-    composes: baseTagLine;
-    color: var(--dark-green);
-    font-size: var(--font-96);
-}
-
 .tagline {
     composes: baseTagLine;
     font-size: 18px;
@@ -22,19 +8,13 @@
     letter-spacing: 0.08em;
     line-height: 1.2;   
 }
-
-.titlePrimary {
-    composes: baseHeadLine;
+.baseHeadLine, .titlePrimary {
+    composes: baseTagLine;
+    color: var(--dark-green);
+    font-size: var(--font-96);
 }
-
 .titleSecondary {
     composes: baseHeadLine;
     line-height: 0.8;
 }
-
 .highlight { color: var(--accent-orange); }
-
-.loaded :is(.tagline, .titlePrimary, .titleSecondary) {
-    transform: translateY(0%);
-    opacity: 1;
-}

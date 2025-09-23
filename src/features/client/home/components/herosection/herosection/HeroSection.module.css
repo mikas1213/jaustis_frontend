@@ -2,14 +2,30 @@
     position: relative;
 	height: 896px;
 	background-image: url('../../../../../../assets/images/homepage/bgr_2443x1677.webp');
-	background-size: cover;
 	background-size: 120% auto;
 	background-position: 0% 60%;
 	background-repeat: no-repeat;
 }
-
+.parallax { will-change: transform; }
 .headline {
-    will-change: transform;
+    opacity: 0.2; 
+    transform: translateY(12px);
+    transition: transform var(--delay-08) ease-out, opacity var(--delay-08) ease-out;
+}
+.headline.loaded {
+    transform: translateY(0%);
+    opacity: 1;
+}
+.serviceCards {
+    opacity: 0.2;
+    transform: translateY(24px);
+    transition: transform var(--delay-08) ease-out, opacity var(--delay-08) ease-out;
+}
+.serviceCards.loaded {
+    transform: translateY(0%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 1;
 }
 
 

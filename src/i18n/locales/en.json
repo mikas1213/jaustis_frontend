@@ -17,5 +17,21 @@
         "titleB": "You",
         "titleC": "find",
         "titleD": "the answer"
+    },
+
+    "services": {
+        "psychotherapy": {
+            "title": "Psychotherapy",
+            "body": "A long-term process that helps you gain deeper self-awareness, recognize behavioral patterns, and change them."
+            
+        },
+        "consulting": {
+            "title": "Consulting",
+            "body": "Short-term support focused on solving specific problems. Helps to overcome crisis situations."
+        },
+        "session-reservation": {
+            "title": "Session reservation",
+            "body": "A convenient way to book your first or follow-up appointment online. Consultations take place in a cozy setting."
+        }
     }
 }

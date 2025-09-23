@@ -1,5 +1,6 @@
 :root {
-	--layout-width: 1200px;
+	/* --layout-width: 1200px; */
+	--layout-width: 1185px;
 
     /* -C-O-L-O-U-R-S- */
     /* Main colours*/
@@ -110,4 +111,10 @@
     --br-16: 16px;
     --br-20: 20px;
     --br-100: 100px;
+
+    /* -D-E-L-A-Y-S */
+    /* --delay-headline: 0.5s; */
+    /* --delay-serviceCards: 0.5s; */
+    --delay-08: 0.8s;
+
 }

@@ -1,6 +1,5 @@
 import { HeroSection, StatisticsSection } from '../../features/client/home/components';
 
-
 const HomePage = () => {
 	return (
         <>
