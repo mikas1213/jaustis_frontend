@@ -32,5 +32,12 @@
             "title": "Timebestilling",
             "body": "En enkel måte å bestille din første eller neste time på nettet. Konsultasjonene foregår i et hyggelig miljø."
         }
+    },
+
+    "statistics": {
+        "trending": "klienter merker positive endringer",
+        "history": "år med profesjonell erfaring",
+        "check": "vellykket fullførte terapiprosesser",
+        "share": "klienter anbefaler til venner"
     }
 }

@@ -49,11 +49,18 @@
     /* Accents colours */
     --accent-orange: hsl(27, 82%, 50%);    
     --accent-orange-tr: hsla(27, 82%, 50%, 0.7);    
+
+    /* atsiliepimai */
     --accent-gold: hsl(38, 74%, 62%);
     --accent-peach: hsl(25, 59%, 89%);
     --accent-mint: hsl(177, 23%, 84%);
     --accent-sky: hsl(210, 52%, 89%);
 
+    /* statistics */
+    --accent-trending: var(--dark-green);
+    --accent-history: hsl(207, 59%, 43%);
+    --accent-check: var(--accent-orange);
+    --accent-share: hsl(282, 44%, 47%);
     
 	/* -F-O-N-T---S-I-Z-E- */
     --ratio: 1.25;
@@ -113,8 +120,5 @@
     --br-100: 100px;
 
     /* -D-E-L-A-Y-S */
-    /* --delay-headline: 0.5s; */
-    /* --delay-serviceCards: 0.5s; */
     --delay-08: 0.8s;
-
 }

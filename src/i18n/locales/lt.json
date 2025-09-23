@@ -32,5 +32,12 @@
             "title": "Sesijos rezervacija",
             "body": "Patogus būdas užsisakyti pirmąjį ar tolimesnį susitikimą internetu. Konsultacijos vyksta jaukioje."
         }
+    },
+
+    "statistics": {
+        "trending": "klientų pastebi teigiamus pokyčius",
+        "history": "metų profesionalios patirties",
+        "check": "sėkmingai užbaigtų terapijos procesų",
+        "share": "klientų rekomenduoja draugams"
     }
 }

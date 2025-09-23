@@ -1,0 +1,28 @@
+.icon {
+    display: grid;
+    place-content: center;
+    width: var(--s-56);
+    height: var(--s-56);
+    border-radius: var(--br-100);
+}
+
+.trending .icon { background-color: var(--accent-trending); }
+.history .icon { background-color: var(--accent-history); }
+.check .icon { background-color: var(--accent-check); }
+.share .icon { background-color: var(--accent-share); }
+
+.value { 
+    font-size: var(--font-48); 
+    font-weight: 700;
+}
+.body {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+}
+.trending :is(.value, .body) { color: var(--accent-trending); }
+.history :is(.value, .body) { color: var(--accent-history); }
+.check :is(.value, .body) { color: var(--accent-check); }
+.share :is(.value, .body) { color: var(--accent-share); }

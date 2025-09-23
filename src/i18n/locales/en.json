@@ -33,5 +33,12 @@
             "title": "Session reservation",
             "body": "A convenient way to book your first or follow-up appointment online. Consultations take place in a cozy setting."
         }
+    },
+
+    "statistics": {
+        "trending": "Clients notice positive changes",
+        "history": "Years of professional experience",
+        "check": "Successfully completed therapy processes",
+        "share": "Clients recommend to friends"
     }
 }
