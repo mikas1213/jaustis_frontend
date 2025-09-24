@@ -1,0 +1,46 @@
+.aboutMe {
+    margin-block: calc(var(--s-8) * 10);
+}
+
+.left {
+    display: flex;
+    width: 100%;
+    padding-bottom: 100%;
+    background-image: url('../../../../../../assets/images/homepage/author.webp');
+    background-size: 150% auto;
+    border-radius: var(--br-2);
+} 
+
+.greeting, .title, .signature {
+    color: var(--dark-green);
+}
+
+.greeting {
+    font-size: var(--font-25);
+    font-weight: 500;
+}
+
+.title {
+    font-size: var(--font-60);
+    font-weight: 700;
+    line-height: 95%;
+    letter-spacing: -2%;
+}
+.about {
+    color: var(--true-grey-700);
+    font-size: var(--font-20);
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+.signature {
+    color: var(--white-80);
+    font-size: var(--font-25);
+}
+
+.signature span {
+    background-color: var(--dark-green);
+    padding: 4px 8px;
+    border-radius: var(--br-2);
+}

@@ -39,5 +39,14 @@
         "history": "metų profesionalios patirties",
         "check": "sėkmingai užbaigtų terapijos procesų",
         "share": "klientų rekomenduoja draugams"
+    },
+
+    "aboutme": {
+        "img-alt": "Autoriaus nuotrauka",
+        "greeting": "Labas, aš esu",
+        "title": "Sandra Jatulytė psichoterapeutė",
+        "about1": "Esu Jūsų psichoterapeutė, turinti ilgametę patirtį padedant žmonėms atrasti vidinę ramybę ir geresnį savęs supratimą. Mano darbo esmė – sukurti saugią erdvę, kurioje galite atvirai kalbėti apie savo patirtis ir jausmus.",
+        "about2": "Jūsų psichoterapeutė, turinti ilgametę patirtį padedant žmonėms atrasti vidinę ramybę ir geresnį savęs supratimą. Mano darbo esmė – sukurti saugią erdvę.",
+        "signature": "Su meile be žalos"
     }
 }
