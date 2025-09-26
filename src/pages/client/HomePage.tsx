@@ -1,4 +1,10 @@
-import { HeroSection, StatisticsSection, AboutMeSection, PriceSection } from '../../features/client/home/components';
+import { 
+    HeroSection, 
+    StatisticsSection, 
+    AboutMeSection, 
+    PriceSection,
+    BookingSection
+} from '../../features/client/home/components';
 
 const HomePage = () => {
 	return (
@@ -7,6 +13,7 @@ const HomePage = () => {
             <StatisticsSection />
             <AboutMeSection />
             <PriceSection />
+            <BookingSection />
         </>
 	);
 };
