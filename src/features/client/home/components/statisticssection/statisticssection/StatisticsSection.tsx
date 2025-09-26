@@ -26,9 +26,9 @@ const StatisticsSection = () => {
 	return (
 		<Container maxWidth='100vw' as='section' padding='0' className={styles.statisticsSection}>
             <Container padding='0'>
-                <Grid min='200px' space='5rem'>
+                <Grid min='100px' space='1rem'>
                     {statistics.map(stat => 
-                        <StatisticCard card={stat}>
+                        <StatisticCard key={stat} card={stat}>
                             <StatisticCard.Icon>{iconMap[stat]}</StatisticCard.Icon>
                             <StatisticCard.Value>{valuesMap[stat]}</StatisticCard.Value>
                             <StatisticCard.Body>{t(`statistics:${stat}`)}</StatisticCard.Body>

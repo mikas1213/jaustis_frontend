@@ -33,7 +33,6 @@ const Box = ({ children, padding = ['0'], borderWidth = '0', className = '', }: 
     };
 
     const [t, r, b, l] = normalizePadding(padding);
-    console.log(t, r, b, l)
     const boxClasses = [
         styles.box,
         className

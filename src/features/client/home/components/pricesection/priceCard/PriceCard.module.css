@@ -1,0 +1,42 @@
+
+.basic .icon { filter: var(--plan-icon-orange-shadow); }
+.standard .icon { filter: var(--plan-icon-green-shadow); }
+.premium .icon { filter: var(--plan-icon-blue-shadow); }
+
+.icon {
+    padding: 1rem;
+}
+
+.icon svg {
+    width: 8rem;
+    height: 8rem;
+}
+
+.label {
+    color: var(--true-grey-700);
+    font-size: (--font-20);
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.price {
+    position: relative;
+    color: var(--true-grey-700);
+    font-size: var(--font-96);
+    font-weight: 700;
+    /* line-height: 50%; */
+}
+.price .sup {
+    position: absolute;
+    top: 3.2rem;
+    left: -1.5rem;
+    font-size: var(--font-40) !important; 
+    font-weight: 500;
+}
+.priceTag {
+    color: var(--true-grey-700);
+    font-size: var(--font-25);
+    font-weight: 500;
+}

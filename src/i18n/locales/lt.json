@@ -42,11 +42,20 @@
     },
 
     "aboutme": {
-        "img-alt": "Autoriaus nuotrauka",
+        "imgAlt": "Autoriaus nuotrauka",
         "greeting": "Labas, aš esu",
         "title": "Sandra Jatulytė psichoterapeutė",
         "about1": "Esu Jūsų psichoterapeutė, turinti ilgametę patirtį padedant žmonėms atrasti vidinę ramybę ir geresnį savęs supratimą. Mano darbo esmė – sukurti saugią erdvę, kurioje galite atvirai kalbėti apie savo patirtis ir jausmus.",
         "about2": "Jūsų psichoterapeutė, turinti ilgametę patirtį padedant žmonėms atrasti vidinę ramybę ir geresnį savęs supratimą. Mano darbo esmė – sukurti saugią erdvę.",
         "signature": "Su meile be žalos"
+    },
+
+    "prices": {
+        "header": "Pasirinkite savo terapijos planą",
+        "firstRow": "Užsisakant",
+        "basic": "nuo 1 iki 3 sesijų",
+        "standard": "nuo 4 iki 7 sesijų",
+        "premium": "8 ir daugiau sesijų",
+        "priceTag": "sesijos kaina"
     }
 }

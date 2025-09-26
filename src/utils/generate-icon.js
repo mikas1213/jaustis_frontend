@@ -9,7 +9,7 @@ const __iconsDir = path.resolve(__dirname, '../components/ui/icons');
 const generateExportLines = files => {
     return files.filter(file => file.endsWith('.tsx')).map(file => {
         const name = path.basename(file, '.tsx');
-        return`export { default as ${name}} from './${name}'`;
+        return`export { default as ${name}} from './${name}';`;
     });
 };
 

@@ -43,11 +43,20 @@
     },
 
     "aboutme": {
-        "img-alt": "Author's photo",
+        "imgAlt": "Author's photo",
         "greeting": "Hello, I am",
-        "title": "Sandra Jatulytė, a psychotherapist",
+        "title": "Sandra Jatulytė a psychotherapist",
         "about1": "I am your psychotherapist, with many years of experience helping people discover inner peace and a deeper understanding of themselves. The essence of my work is to create a safe space where you can openly talk about your experiences and emotions.",
         "about2": "Your psychotherapist with many years of experience helping people discover inner peace and a deeper understanding of themselves. The essence of my work is to create a safe space.",
         "signature": "With love be žalos"
+    },
+
+    "prices": {
+        "header": "Choose your therapy plan",
+        "firstRow": "When booking",
+        "basic": "from 1 to 3 sessions",
+        "standard": "from 4 to 7 sessions",
+        "premium": "8 or more sessions",
+        "priceTag": "session price"
     }
 }

@@ -8,7 +8,7 @@ const AboutMeSection = () => {
     return (
         <Container as='section' padding='0'>
             <Grid space='var(--s-24)' className={styles.aboutMe}>
-                <div className={styles.left} role='img' aria-label={t('aboutme:img-alt')}></div>
+                <div className={styles.left} role='img' aria-label={t('aboutme:imgAlt')}></div>
                 <Stack splitAfter={4}> 
                     <Box padding={['0', '0', 'var(--s-16)', 'var(--s-56)']} className={`font-rubik ${styles.greeting}`}>{t('aboutme:greeting')}</Box>
                     <Box padding={['0', '0', 'var(--s-48)', 'var(--s-56)']} className={`font-garamond ${styles.title}`}>{t('aboutme:title')}</Box>

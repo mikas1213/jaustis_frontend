@@ -1,4 +1,4 @@
-import { HeroSection, StatisticsSection, AboutMeSection } from '../../features/client/home/components';
+import { HeroSection, StatisticsSection, AboutMeSection, PriceSection } from '../../features/client/home/components';
 
 const HomePage = () => {
 	return (
@@ -6,6 +6,7 @@ const HomePage = () => {
             <HeroSection />
             <StatisticsSection />
             <AboutMeSection />
+            <PriceSection />
         </>
 	);
 };

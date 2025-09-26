@@ -42,11 +42,20 @@
     },
 
     "aboutme": {
-        "img-alt": "Forfatterens bilde",
+        "imgAlt": "Forfatterens bilde",
         "greeting": "Hei, jeg er",
-        "title": "Sandra Jatulytė, psykoterapeut.",
+        "title": "Sandra Jatulytė psykoterapeut.",
         "about1": "Jeg er din psykoterapeut med mange års erfaring i å hjelpe mennesker med å finne indre ro og en dypere forståelse av seg selv. Kjernen i mitt arbeid er å skape et trygt rom hvor du kan snakke åpent om dine erfaringer og følelser.",
         "about2": "Din psykoterapeut med mange års erfaring i å hjelpe mennesker med å finne indre ro og en bedre forståelse av seg selv. Kjernen i mitt arbeid er å skape et trygt rom.",
         "signature": "Med kjærlighet be žalos"
+    },
+
+    "prices": {
+        "header": "Velg din terapiplan",
+        "firstRow": "Ved bestilling",
+        "basic": "av 1 til 3 sesjoner",
+        "standard": "av 4 til 7 sesjoner",
+        "premium": "av 8 eller flere sesjoner",
+        "priceTag": "pris per sesjon"
     }
 }

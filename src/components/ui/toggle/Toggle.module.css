@@ -1,0 +1,102 @@
+.toggleWrapper {
+    border-radius: 100px;
+}
+
+.toggle {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.toggle::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: calc(50%);
+    border-radius: 100px;
+    background-color: var(--tb-color);
+    transition: left 0.2s ease-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 0;
+}
+
+.tab {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 100px;
+    font-weight: 500;
+    color: var(--txt-color-off);
+    z-index: 1;
+}
+
+.left .toggle::after {
+    left: 0%;
+}
+.right .toggle::after {
+    left: 50%;
+}
+.tab.active {
+    color: var(--txt-color-on);   
+}
+
+.xs.toggleWrapper {
+    padding: var(--s-2);
+}
+.xs .toggle {
+    height: var(--s-20);
+}
+.xs .tab {
+    font-size: var(--font-10);
+    padding-inline: var(--s-12);
+}
+
+.sm.toggleWrapper {
+    padding: var(--s-2);
+}
+.sm .toggle {
+    height: calc(var(--s-4) * 7);
+}
+.sm .tab {
+    font-size: var(--font-12);
+    padding-inline: var(--s-16);
+}
+
+.md.toggleWrapper {
+    padding: var(--s-4);
+}
+.md .toggle {
+    height: calc(var(--s-4) * 9);
+}
+.md .tab {
+    font-size: var(--font-16);
+    padding-inline: var(--s-32);
+}
+
+
+.lg.toggleWrapper {
+    padding: calc(var(--s-4));
+}
+.lg .toggle {
+    height: calc(var(--s-8) * 5);
+}
+.lg .tab {
+    font-size: var(--font-20);
+    padding-inline: var(--s-32);
+}
+
+.xl.toggleWrapper {
+    padding: calc(var(--s-4));
+}
+.xl .toggle {
+    height: calc(var(--s-8) * 6);
+}
+.xl .tab {
+    font-size: var(--font-25);
+    padding-inline: var(--s-48);
+}
+

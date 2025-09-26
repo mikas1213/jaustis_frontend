@@ -5,6 +5,6 @@ export { default as Container } from './container/Container';
 export { default as Cover } from './cover/Cover';
 export { default as Grid } from './grid/Grid';
 export { default as Icon } from './icon/Icon';
-// export { default as InlineBundle} from './inlineBundle/InlineBundle';
 export { default as Stack } from './stack/Stack';
 export { default as Switcher } from './switcher/Switcher';
+export { default as Toggle } from './toggle/Toggle';
