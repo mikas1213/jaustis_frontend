@@ -1,5 +1,5 @@
 import styles from './AboutMeSection.module.css';
-import { Container, Grid, Stack, Box } from '../../../../../../components/ui';
+import { Container, Grid, Stack, Box } from '../../../../../components/ui';
 import { useTranslation } from 'react-i18next';
 
 const AboutMeSection = () => {
