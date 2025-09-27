@@ -10,4 +10,5 @@ export { default as ServiceCal} from './ServiceCal';
 export { default as ServiceHeart} from './ServiceHeart';
 export { default as ServiceSun} from './ServiceSun';
 export { default as Share} from './Share';
+export { default as Star} from './Star';
 export { default as Trending} from './Trending';

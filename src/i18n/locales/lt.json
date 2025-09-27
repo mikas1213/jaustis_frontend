@@ -57,5 +57,12 @@
         "standard": "nuo 4 iki 7 sesijų",
         "premium": "8 ir daugiau sesijų",
         "priceTag": "sesijos kaina"
+    },
+
+
+    "reviews": {
+        "header": "Klientų patirtys"
     }
+
+
 }

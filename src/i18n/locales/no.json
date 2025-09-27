@@ -57,5 +57,9 @@
         "standard": "av 4 til 7 sesjoner",
         "premium": "av 8 eller flere sesjoner",
         "priceTag": "pris per sesjon"
+    },
+
+    "reviews": {
+        "header": "Kundeopplevelser"
     }
 }

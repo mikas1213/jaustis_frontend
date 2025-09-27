@@ -1,0 +1,9 @@
+.reviewSection {
+	background-color: var(--white-100);
+}
+.header {
+	color: var(--dark-green);
+	font-size: var(--font-60);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}

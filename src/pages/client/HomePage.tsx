@@ -3,7 +3,8 @@ import {
     StatisticsSection, 
     AboutMeSection, 
     PriceSection,
-    BookingSection
+    BookingSection,
+    ReviewSection
 } from '../../features/client/home/components';
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
             <AboutMeSection />
             <PriceSection />
             <BookingSection />
+            <ReviewSection />
         </>
 	);
 };
