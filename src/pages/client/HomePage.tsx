@@ -1,6 +1,6 @@
 import { 
     HeroSection, 
-    StatisticsSection, 
+    StatisticSection, 
     AboutMeSection, 
     PriceSection,
     BookingSection,
@@ -11,7 +11,7 @@ const HomePage = () => {
 	return (
         <>
             <HeroSection />
-            <StatisticsSection />
+            <StatisticSection />
             <AboutMeSection />
             <PriceSection />
             <BookingSection />

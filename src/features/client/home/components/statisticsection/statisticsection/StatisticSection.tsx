@@ -1,4 +1,4 @@
-import styles from './StatisticsSection.module.css';
+import styles from './StatisticSection.module.css';
 import { Container, Grid } from '../../../../../../components/ui';
 import StatisticCard from '../statisticCard';
 import { useTranslation } from 'react-i18next';
@@ -20,11 +20,11 @@ const valuesMap: Record<IconType, string> = {
     'share': '87%'
 }
 
-const StatisticsSection = () => {
+const StatisticSection = () => {
     const { t } = useTranslation();
 
 	return (
-		<Container maxWidth='100vw' as='section' padding='0' className={styles.statisticsSection}>
+		<Container maxWidth='100vw' as='section' padding='0' className={styles.statisticSection}>
             <Container padding='0'>
                 <Grid min='100px' space='1rem'>
                     {statistics.map(stat => 
@@ -40,4 +40,4 @@ const StatisticsSection = () => {
 	);
 };
 
-export default StatisticsSection;
+export default StatisticSection;
