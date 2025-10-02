@@ -1,0 +1,12 @@
+.faqSection {
+    background-color: var(--white-100);
+}
+.innerFaqSection {
+    padding-bottom: var(--s-56);
+}
+
+.header {
+    color: var(--dark-green);
+    font-size: var(--font-60);
+    letter-spacing: -0.02em;
+}

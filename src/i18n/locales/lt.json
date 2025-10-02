@@ -62,7 +62,35 @@
 
     "reviews": {
         "header": "Klientų patirtys"
+    },
+
+    "articles": "",
+
+    "faq": {
+        "header": "D.U.K.", 
+        "q1": {
+            "question": "Kiek kainuoja „Talkspace“ internetinė terapija?",
+            "answer": "„Talkspace“ internetinės terapijos kainos svyruoja nuo 260 iki 396 eurų per mėnesį, priklausomai nuo pasirinkto plano ir paslaugų apimties. Skirtingi paketai gali apimti teksto bendravimą, vaizdo sesijas arba abiejų kombinaciją, o kainos taip pat priklauso nuo terapeuto patirties lygio."
+        },
+        "q2": {
+            "question": "Ar internetinė terapija veiksminga?",
+            "answer": "Taip, moksliniai tyrimai rodo, kad internetinė terapija yra veiksminga daugeliui psichikos sveikatos problemų, įskaitant nerimą, depresiją ir stresą."
+        },
+        "q3": {
+            "question": "Kaip man susirasti tinkamą terapeutą?",
+            "answer": "Tinkamo terapeuto paieška prasideda nuo savo poreikių įvertinimo – pagalvokite, kokios problemos jus kamuoja ir kokių rezultatų tikitės. Ieškokite kvalifikuoto specialisto, turinčio patirties jūsų problemų sprendime, atsižvelkite į jo taikomus metodus, kvalifikaciją ir licencijas."
+        },
+        "q4": {
+            "question": "Ar internetinė terapija veiksminga?",
+            "answer": "Dalis sveikatos draudimo kompanijų jau pradėjo kompensuoti internetinės terapijos paslaugas, tačiau tai priklauso nuo konkretaus draudimo plano ir draudiko."
+        },
+        "q5": {
+            "question": "Kuo skiriasi terapija ir psichiatrija?",
+            "answer": "Terapija (psichoterapija) ir psichiatrija skiriasi tiek specialistų išsilavinimu, tiek gydymo metodais. Psichoterapeutai (psichologai, socialiniai darbuotojai) koncentruojasi į pokalbiais paremtus gydymo metodus, padedančius išsiaiškinti ir keisti elgesio, mąstymo bei emocijų modelius."
+        },
+        "q6": {
+            "question": "Kaip man susirasti tinkamą terapeutą?",
+            "answer": "Tinkamo terapeuto paieška prasideda nuo savo poreikių įvertinimo – pagalvokite, kokios problemos jus kamuoja ir kokių rezultatų tikitės. Ieškokite kvalifikuoto specialisto, turinčio patirties jūsų problemų sprendime, atsižvelkite į jo taikomus metodus, kvalifikaciją ir licencijas."
+        }
     }
-
-
 }

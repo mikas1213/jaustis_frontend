@@ -62,5 +62,35 @@
 
     "reviews": {
         "header": "Customer experiences"
+    },
+
+    "articles": "",
+
+    "faq": {
+        "header": "F.A.Q.",
+        "q1": {
+            "question": "How much does online therapy with „Talkspace“ cost?",
+            "answer": "„Talkspace“ online therapy costs range from €260 to €396 per month, depending on the selected plan and scope of services. Different packages may include text-based communication, video sessions, or a combination of both. Pricing also varies based on the therapist’s level of experience."
+        },
+        "q2": {
+            "question": "Is online therapy truly effective?",
+            "answer": "Yes, scientific research shows that online therapy is effective for many mental health issues, including anxiety, depression, and stress."
+        },
+        "q3": {
+            "question": "How can I find the right therapist for me?",
+            "answer": "Finding the right therapist starts with assessing your own needs—think about the challenges you're facing and the outcomes you’re hoping for. Look for a qualified professional with experience in your area of concern, and consider their methods, credentials, and licensing."
+        },
+        "q4": {
+            "question": "Does online therapy really work?",
+            "answer": "Some health insurance providers have begun covering online therapy services, but this depends on your specific insurance plan and provider."
+        },
+        "q5": {
+            "question": "What’s the difference between therapy and psychiatry?",
+            "answer": "Therapy (psychotherapy) and psychiatry differ in both educational background and treatment approach. Psychotherapists (such as psychologists or social workers) focus on talk-based methods that help uncover and change patterns in behavior, thinking, and emotions."
+        },
+        "q6": {
+            "question": "What’s the best way to choose the right therapist?",
+            "answer": "Finding the right therapist begins with understanding your personal needs—identify the issues you’re dealing with and the goals you want to achieve. Seek out a qualified specialist experienced in those areas, and review their therapeutic approach, credentials, and licensing."
+        }
     }
 }

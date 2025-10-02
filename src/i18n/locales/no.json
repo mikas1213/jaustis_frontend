@@ -61,5 +61,35 @@
 
     "reviews": {
         "header": "Kundeopplevelser"
+    },
+
+    "articles": "",
+
+    "faq": {
+        "header": "O.S.S.",
+        "q1": {
+            "question": "Hvor mye koster nettterapi med „Talkspace“?",
+            "answer": "Nettterapi med „Talkspace“ koster mellom €260 og €396 per måned, avhengig av valgt plan og tjenesteomfang. Ulike pakker kan inkludere tekstbasert kommunikasjon, videosamtaler eller en kombinasjon av begge. Prisen varierer også basert på terapeutens erfaringsnivå."
+        },
+        "q2": {
+            "question": "Er nettterapi virkelig effektivt?",
+            "answer": "Ja, forskning viser at nettterapi er effektivt for mange psykiske helseutfordringer, inkludert angst, depresjon og stress."
+        },
+        "q3": {
+            "question": "Hvordan kan jeg finne riktig terapeut for meg?",
+            "answer": "Å finne riktig terapeut starter med å vurdere dine egne behov – tenk over hvilke utfordringer du står overfor og hvilke resultater du ønsker. Se etter en kvalifisert fagperson med erfaring innen ditt problemområde, og vurder deres metode, kompetanse og autorisasjon."
+        },
+        "q4": {
+            "question": "Fungerer nettterapi faktisk?",
+            "answer": "Noen helseforsikringsselskaper har begynt å dekke kostnader for nettterapi, men dette avhenger av din spesifikke forsikringsplan og leverandør."
+        },
+        "q5": {
+            "question": "Hva er forskjellen mellom terapi og psykiatri?",
+            "answer": "Terapi (psykoterapi) og psykiatri skiller seg både i utdanningsbakgrunn og behandlingsmetoder. Psykoterapeuter (som psykologer eller sosionomer) fokuserer på samtalebaserte metoder som hjelper med å avdekke og endre mønstre i atferd, tanker og følelser."
+        },
+        "q6": {
+            "question": "Hva er den beste måten å velge riktig terapeut på?",
+            "answer": "Å finne riktig terapeut begynner med å forstå dine personlige behov – identifiser hvilke problemer du har og hvilke mål du ønsker å oppnå. Søk etter en kvalifisert spesialist med erfaring innen disse områdene, og vurder deres terapeutiske tilnærming, kompetanse og autorisasjon."
+        }
     }
 }

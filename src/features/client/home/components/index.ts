@@ -5,3 +5,4 @@ export { default as PriceSection } from './pricesection/pricesection/PriceSectio
 export { default as BookingSection } from './bookingsection/bookingsection/BookingSection';
 export { default as ReviewSection } from './reviewsection/reviewsection/ReviewSection';
 export { default as ArticleSection } from './articlesection/articlesection/ArticleSection';
+export { default as FaqSection } from './faqsection/faqsection/FaqSection';

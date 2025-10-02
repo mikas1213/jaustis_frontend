@@ -5,7 +5,8 @@ import {
     PriceSection,
     BookingSection,
     ReviewSection,
-    ArticleSection
+    ArticleSection,
+    FaqSection
 } from '../../features/client/home/components';
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
             <BookingSection />
             <ReviewSection />
             <ArticleSection />
+            <FaqSection />
         </>
 	);
 };
