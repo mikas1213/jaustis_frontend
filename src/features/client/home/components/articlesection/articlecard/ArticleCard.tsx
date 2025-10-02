@@ -1,5 +1,4 @@
 import styles from './ArticleCard.module.css';
-import { importImageURL } from '../../../../../../utils/importImage';
 import { Cluster, Stack, Box, Icon } from '../../../../../../components/ui';
 import { ShareArticle, Calendar, PersonFull, CircleArrowRight } from '../../../../../../components/ui/icons';
 import { type ArticleProps } from '../types';
@@ -7,7 +6,7 @@ import type { CSSProperties } from 'react';
 
 const ArticleCard = ({ article }: { article: ArticleProps }) => {
     const cardStyles = {
-        ...(article.image ? { backgroundImage: `url(${importImageURL(article.image)})` } : { backgroundColor: article.bgColor })
+        ...(article.image ? { backgroundImage: `url(${article.image})` } : { backgroundColor: article.bgColor })
     } as CSSProperties;
     
     const articleCardClasses = [

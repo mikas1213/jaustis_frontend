@@ -22,7 +22,7 @@ const articles: ArticleProps[] = [
         date: 'Gruodžio 4, 2025',
         title: 'Modern Lifestyle',
         body: 'As the numbers of mobile users continues to outpace the number of desktop users',
-        image: '../assets/images/homepage/article2.webp',
+        image: '/images/article2.webp',
         bgColor: null,
         settings: {
             cardShape: '1_1',
@@ -34,7 +34,7 @@ const articles: ArticleProps[] = [
         date: 'Gruodžio 4, 2025',
         title: 'Modern Lifestyle',
         body: 'As the numbers of mobile users continues to outpace the number of desktop users',
-        image: '../assets/images/homepage/article1.webp',
+        image: '/images/article1.webp',
         bgColor: null,
         settings: {
             cardShape: '2_1',
@@ -46,7 +46,7 @@ const articles: ArticleProps[] = [
         date: 'Gruodžio 4, 2025',
         title: 'Modern Lifestyle',
         body: 'As the numbers of mobile users continues to outpace the number of desktop users',
-        image: '../assets/images/homepage/article2.webp',
+        image: '/images/article2.webp',
         bgColor: null, 
         settings: {
             cardShape: '1_1',

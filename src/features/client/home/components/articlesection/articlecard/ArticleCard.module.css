@@ -18,7 +18,7 @@
     position: relative;
     overflow: hidden;
     border-radius: var(--br-16);
-    padding-bottom: 50%;      
+    padding-bottom: 50%;
 }
 
 .innerArticleCard {
