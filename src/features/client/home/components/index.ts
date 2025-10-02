@@ -4,3 +4,4 @@ export { default as AboutMeSection } from './aboutmesection/AboutMeSection';
 export { default as PriceSection } from './pricesection/pricesection/PriceSection';
 export { default as BookingSection } from './bookingsection/bookingsection/BookingSection';
 export { default as ReviewSection } from './reviewsection/reviewsection/ReviewSection';
+export { default as ArticleSection } from './articlesection/articlesection/ArticleSection';

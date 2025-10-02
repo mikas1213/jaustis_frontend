@@ -1,6 +1,5 @@
 .icon {
 	display: inline-flex;
-	align-items: baseline;
     direction: var(--dir);
 }
 
@@ -11,8 +10,16 @@
     margin-inline-end: var(--icon-space, 0.5em);
     transform: scale(1);
 }
-
 .cap svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+
+.ex svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+/* .cap svg {
     height: 1cap;
     width: 1cap;
 }
@@ -20,4 +27,4 @@
 .ex svg {
     height: 1ex;
     width: 1ex;
-}
+} */

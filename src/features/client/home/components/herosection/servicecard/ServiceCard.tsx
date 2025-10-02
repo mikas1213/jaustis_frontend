@@ -29,12 +29,24 @@ const ServiceCard = ({ children, id }: ServiceCardProps) => {
 };
 
 ServiceCard.Header = ({ id, title }: HeaderProps) => {
+    let icon = id === 'psychotherapy' && <ServiceHeart fill='var(--accent-orange)' />;
+    icon = id === 'consulting' && <ServiceSun fill='var(--accent-orange)' />;
+    icon = id === 'session-reservation' && <ServiceCal fill='var(--accent-orange)' />;
+
     return (
-        <Icon label={title} align='center' className={styles.header}>
-            {id === 'psychotherapy' && <ServiceHeart fill='var(--accent-orange)' />}
-            {id === 'consulting' && <ServiceSun fill='var(--accent-orange)' />}
-            {id === 'session-reservation' && <ServiceCal fill='var(--accent-orange)' />}
-        </Icon>
+        <Icon 
+            icon={icon}
+            label={title} 
+            align='center' 
+            size='1.2cap' 
+            className={styles.header} 
+        />
+
+        // <Icon label={title} align='center' size='1.2cap' className={styles.header}>
+        //     {id === 'psychotherapy' && <ServiceHeart fill='var(--accent-orange)' />}
+        //     {id === 'consulting' && <ServiceSun fill='var(--accent-orange)' />}
+        //     {id === 'session-reservation' && <ServiceCal fill='var(--accent-orange)' />}
+        // </Icon>
     );
 };
 

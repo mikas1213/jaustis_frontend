@@ -3,6 +3,5 @@
     max-width: var(--max-width);
     margin-inline: auto;
     padding-inline-start: var(--padding, 1rem);
-    padding-inline-end: var(--padding, 1rem);
-    
+    padding-inline-end: var(--padding, 1rem);   
 }

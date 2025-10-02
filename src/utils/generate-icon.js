@@ -9,7 +9,7 @@ const __iconsDir = path.resolve(__dirname, '../components/ui/icons');
 const generateExportLines = files => {
     return files.filter(file => file.endsWith('.tsx')).map(file => {
         const name = path.basename(file, '.tsx');
-        return`export { default as ${name}} from './${name}';`;
+        return`export { default as ${name} } from './${name}';`;
     });
 };
 
@@ -19,7 +19,7 @@ if(!fs.existsSync(__iconsDir)) {
 
 const files = fs.readdirSync(__iconsDir);
 const exportLines = generateExportLines(files);
-
+console.log('exportLines: ', exportLines)
 if(exportLines.length) {
     fs.writeFileSync(path.join(__iconsDir, 'index.ts'), exportLines.join('\n'));
 } else {

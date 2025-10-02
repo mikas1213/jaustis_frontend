@@ -9,7 +9,7 @@ import AdminUsersPage from './pages/admin/AdminUsersPage';
 // CLIENT
 import ClientLayout from './layouts';
 import HomePage from './pages/client/HomePage';
-import AboutPage from './pages/client/AboutPage';
+// import AboutPage from './pages/client/AboutPage';
 
 const hostname = window.location.hostname;
 const isAdmin = hostname.startsWith('admin.');
@@ -32,7 +32,7 @@ const clientRoutes = [
 		element: <ClientLayout />,
 		children: [
 			{ path: '/', element: <HomePage /> },
-			{ path: '/about', element: <AboutPage /> }
+			// { path: '/about', element: <AboutPage /> }
 		],
 	},
     { path: '*', element: <h1>404 Page Not Found</h1> }

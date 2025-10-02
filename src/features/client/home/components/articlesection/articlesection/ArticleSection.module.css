@@ -1,0 +1,6 @@
+.articles {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--s-16);
+    margin-block: calc(var(--s-56) + var(--s-16));
+}
