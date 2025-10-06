@@ -1,13 +1,10 @@
 import styles from './Header.module.css';
 import useScrollDirection from '../../../hooks/useScrollDirection';
-
 import { JaustisLogo } from '../../ui/icons';
 import Navbar from '../navbar/Navbar';
 import Auth from '../auth/Auth';
-
 import { Cluster, Container  } from '../../ui';
 import LangToggle from '../langToggle/LangToggle';
-
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
@@ -31,9 +28,10 @@ const Header = () => {
                         <Navbar.Item to='/rezervacija' active={isVisible}>{t('navbar:reservation')}</Navbar.Item>
                         <Navbar.Item to='/straipsniai'>{t('navbar:articles')}</Navbar.Item>
                         <Navbar.Item to='/duk'>{t('navbar:faq')}</Navbar.Item>
+                        <Navbar.Item to='/mano-sesijos' className={styles.mySessionsItem}>{t('navbar:mySessions')}</Navbar.Item>
+                        {/* <Navbar.Item to='/mano-sesijos' className={styles.mySessionsItem}>Admin</Navbar.Item> */}
                     </Navbar>
-
-                    <Cluster gap='var(--s-24)' className={isVisibleStyle}>
+                    <Cluster gap='var(--s-16)' className={isVisibleStyle}>
                         <LangToggle />
                         <Auth />
                     </Cluster>

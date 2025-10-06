@@ -2,10 +2,8 @@
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-
     height: var(--nav-height);
     padding-inline: var(--nav-pad);
-    
 	border-radius: var(--br-100);
     background-color: var(--nav-bgr-color);
 	backdrop-filter: blur(12px);
@@ -13,18 +11,20 @@
 }
 .navbarMenu {
     display: grid;
-    grid-template-columns: 45px 62px 132px 121px 57px;
+    place-items: center;
 	gap: var(--nav-item-gap);
 }
+.navbarMenu.lt { grid-template-columns: 47px 56px 121px 103px 64px 142px; }
+.navbarMenu.en { grid-template-columns: 62px 37px 115px 78px 57px 134px; }
+.navbarMenu.no { grid-template-columns: 38px 37px 115px 78px 57px 130px; }
 .navbarItem {
     display: grid;
     place-content: center;
 }
 .navbarItem a {
 	color: var(--white-100);
-	text-transform: uppercase;
 	font-weight: 400;
-	font-size: var(--nav-item-font-size);
+	font-size: var(--font-25);
 	letter-spacing: -0.01em;
 }
 .navbarItem.active a {    

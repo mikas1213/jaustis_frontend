@@ -19,7 +19,7 @@
     z-index: -1;
     height: 100%;
     transition: left 0.15s ease, border-radius 0.15s ease;
-    background-color: var(--white-60);
+    background-color: var(--white-80);
 }
 .language1::after { width: calc(100% / 1); }
 .language2::after { width: calc(100% / 2); }

@@ -19,3 +19,19 @@
 	transform: translateY(0);
     transition: transform 0.3s ease;
 }
+
+.mySessionsItem a {
+    position: absolute;
+    padding: 6px 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    color: var(--true-grey-700) !important;
+    font-weight: 500 !important;
+    background-color: var(--white-80);
+    border-radius: 100px;
+    transition: background-color 0.2s ease;
+}
+.mySessionsItem a:hover {
+    background-color: var(--white-100);
+}
