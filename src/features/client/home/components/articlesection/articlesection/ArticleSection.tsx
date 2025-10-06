@@ -69,7 +69,7 @@ const articles: ArticleProps[] = [
 
 const ArticleSection = () => {
     return (
-        <Container as='section' maxWidth='100vw' padding='0'>
+        <Container id='articles' as='section' maxWidth='100vw' padding='0'>
             <Container maxWidth='var(--layout-width)' padding='0'>
                 <div className={styles.articles}>
                     <HeaderCard />

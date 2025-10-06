@@ -32,7 +32,7 @@ const PriceSection = () => {
     const [terapy, setTerapy] = useState<TerapyType>(sides.left);
     
     return (
-        <Container as='section' padding='0' maxWidth='100vw' className={styles.priceSection}>
+        <Container id='price' as='section' padding='0' maxWidth='100vw' className={styles.priceSection}>
             <Container padding='0'>
                 <Center intrinsic={true} maxWidth='100%'>
                     <Box className={`font-garamond ${styles.header}`} padding={['5rem']}>{ t('prices:header') }</Box>

@@ -4,18 +4,28 @@ import { type ReactNode, useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import { Cluster } from '../../ui';
 import { useTranslation } from 'react-i18next';
+import { useActiveSection } from '../../../contexts';
 
 interface NavProps { 
     children: ReactNode
 };
 
 interface ItemProps extends NavProps {
-    to: string,
+    to?: string,
+    section?: string,
     active?: boolean,
     className?: string
 }
 
+const scrollToSection = (sectionId: string) => {
+	document.getElementById(sectionId)?.scrollIntoView({
+		behavior: 'smooth',
+	});
+};
+const section = ['aboutme', 'price', 'booking', 'articles', 'faq'];
 const Navbar = ({ children }: NavProps) => {
+    
+    const { activeSection } = useActiveSection();
     
     type Lng = 'lt' | 'en' | 'no';
     const { i18n } = useTranslation();
@@ -42,13 +52,13 @@ const Navbar = ({ children }: NavProps) => {
     ].join(' ');
 
 	return (
-        <Cluster as='nav' className={styles.navbar}>
+        <Cluster as='nav' className={`${section.includes(activeSection) ? styles.active : ''} ${styles.navbar}`}>
             <ul className={navbarMenuClasses}>{children}</ul>
         </Cluster>
 	);
 };
 
-const Item = ({ children, to, active, className = ''}: ItemProps) => {
+const Item = ({ children, section, active, className = ''}: ItemProps) => {
     
     const itemClasses = [
         className,
@@ -56,10 +66,15 @@ const Item = ({ children, to, active, className = ''}: ItemProps) => {
         active ? styles.active : ''
 
     ].filter(Boolean).join(' ');
-
+    
     return (
         <li className={itemClasses}>
-            <Link to={to}>{children}</Link>
+
+            {section ? 
+                <span onClick={() => scrollToSection(section)} >{children}</span>
+                :
+                <Link to='mano-sesijos'>{children}</Link>
+            }
         </li>
     );
 };

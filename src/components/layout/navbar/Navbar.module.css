@@ -5,9 +5,13 @@
     height: var(--nav-height);
     padding-inline: var(--nav-pad);
 	border-radius: var(--br-100);
-    background-color: var(--nav-bgr-color);
+    background-color: var(--true-grey-950);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
+    transition: background-color 0.2s ease forward;
+}
+.navbar.active {
+    background-color: var(--true-grey-700);
 }
 .navbarMenu {
     display: grid;
@@ -21,12 +25,16 @@
     display: grid;
     place-content: center;
 }
-.navbarItem a {
+.navbarItem span, .navbarItem a {
 	color: var(--white-100);
 	font-weight: 400;
 	font-size: var(--font-25);
 	letter-spacing: -0.01em;
 }
-.navbarItem.active a {    
-	font-weight: 700;
+.navbarItem.active span {    
+	font-weight: 900;
 } 
+
+.navbarItem span:hover {
+    cursor: pointer;
+}

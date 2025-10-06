@@ -6,7 +6,7 @@ const AboutMeSection = () => {
     const { t } = useTranslation();
 
     return (
-        <Container as='section' padding='0'>
+        <Container id='aboutme' as='section' padding='0'>
             <Grid space='var(--s-24)' className={styles.aboutMe}>
                 <div className={styles.left} role='img' aria-label={t('aboutme:imgAlt')}></div>
                 <Stack splitAfter={4}> 

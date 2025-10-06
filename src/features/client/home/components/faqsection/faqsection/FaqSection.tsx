@@ -7,7 +7,7 @@ const FaqSection = () => {
     const { t } = useTranslation();
 
     return (
-        <Container as='section' maxWidth='100vw' padding='0' className={styles.faqSection}>
+        <Container id='faq' as='section' maxWidth='100vw' padding='0' className={styles.faqSection}>
             <Container maxWidth='var(--layout-width)' padding='0' className={styles.innerFaqSection}>
                 <Center maxWidth='var(--layout-width)' intrinsic={true}>
                     <Box padding={['var(--s-56)']} className={`font-garamond ${styles.header}`}>{t('faq:header')}</Box>

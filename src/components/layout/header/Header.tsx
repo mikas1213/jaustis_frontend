@@ -6,12 +6,14 @@ import Auth from '../auth/Auth';
 import { Cluster, Container  } from '../../ui';
 import LangToggle from '../langToggle/LangToggle';
 import { useTranslation } from 'react-i18next';
+import { useActiveSection } from '../../../contexts';
 
 const Header = () => {
     const { t } = useTranslation(); 
     const isVisible: boolean = useScrollDirection(50);
     const isVisibleStyle = `${isVisible ? styles.visible : styles.hidden}`;
-
+    const { activeSection } = useActiveSection();
+    
     const logoClasses = [
         styles.logoSize,
         isVisibleStyle
@@ -23,13 +25,12 @@ const Header = () => {
                 <Cluster justify='space-between' align='center'>
                     <JaustisLogo className={logoClasses} />
                     <Navbar>
-                        <Navbar.Item to='/'>{t('navbar:about')}</Navbar.Item>
-                        <Navbar.Item to='/kaina'>{t('navbar:price')}</Navbar.Item>
-                        <Navbar.Item to='/rezervacija' active={isVisible}>{t('navbar:reservation')}</Navbar.Item>
-                        <Navbar.Item to='/straipsniai'>{t('navbar:articles')}</Navbar.Item>
-                        <Navbar.Item to='/duk'>{t('navbar:faq')}</Navbar.Item>
+                        <Navbar.Item section='aboutme' active={activeSection === 'aboutme'}>{t('navbar:about')}</Navbar.Item>
+                        <Navbar.Item section='price' active={activeSection === 'price'}>{t('navbar:price')}</Navbar.Item>
+                        <Navbar.Item section='booking' active={activeSection === 'booking'}>{t('navbar:reservation')}</Navbar.Item>
+                        <Navbar.Item section='articles' active={activeSection === 'articles'}>{t('navbar:articles')}</Navbar.Item>
+                        <Navbar.Item section='faq' active={activeSection === 'faq'}>{t('navbar:faq')}</Navbar.Item>
                         <Navbar.Item to='/mano-sesijos' className={styles.mySessionsItem}>{t('navbar:mySessions')}</Navbar.Item>
-                        {/* <Navbar.Item to='/mano-sesijos' className={styles.mySessionsItem}>Admin</Navbar.Item> */}
                     </Navbar>
                     <Cluster gap='var(--s-16)' className={isVisibleStyle}>
                         <LangToggle />
