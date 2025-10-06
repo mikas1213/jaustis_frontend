@@ -1,0 +1,30 @@
+.textareaGroup {
+    width: 100%;
+}
+
+.textareaGroup textarea {
+    width: 100%;
+    padding: var(--s-16);
+    height: var(--s-128);
+    display: block;
+    outline: none;
+    border: none;
+    resize: none;
+    border-radius: var(--br-8);
+    color: var(--dark-green);
+    font-weight: 500;
+    background-color: var(--white-100);
+    transition: outline 0.2s ease;
+    font-size: var(--font-16);
+}
+
+.textareaGroup textarea::placeholder {
+    color: var(--dark-green);
+    font-weight: 500;
+}
+
+.textareaGroup textarea:focus {
+  outline: none;
+  background-color: hsl(176, 30%, 97%);
+  box-shadow: 0 0 0 3px hsla(176, 98%, 35%, 0.2);
+}

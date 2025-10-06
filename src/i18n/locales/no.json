@@ -91,5 +91,18 @@
             "question": "Hva er den beste måten å velge riktig terapeut på?",
             "answer": "Å finne riktig terapeut begynner med å forstå dine personlige behov – identifiser hvilke problemer du har og hvilke mål du ønsker å oppnå. Søk etter en kvalifisert spesialist med erfaring innen disse områdene, og vurder deres terapeutiske tilnærming, kompetanse og autorisasjon."
         }
+    },
+
+    "footer": {
+        "header": "Hei, jeg inviterer deg til en samtale!",
+        "copyEmail": "Kopier",
+        "subHeader": "Noen ganger er det bare et lite skritt som skal til for å føle seg lettere. Hvis du føler deg klar – da er det tid for vår samtale",
+        "cta": "Start din samtale",
+        "name": "Navn",
+        "email": "E-postadresse",
+        "message": "Vil du snakke? Del det som kverner i tankene dine",
+        "send": "Send din forespørsel",
+        "privacy": "Personvernerklæring",
+        "terms": "Vilkår og betingelser"
     }
 }

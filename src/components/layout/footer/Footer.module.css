@@ -1,0 +1,58 @@
+.footer {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+.footerInner {
+    padding-block: var(--s-96);
+}
+
+.header {
+    font-size: var(--font-48);
+    letter-spacing: 1px;
+}
+
+.email {
+    display: flex;
+    font-size: var(--font-16);
+}
+.email span {
+    margin-right: 1rem;
+}
+.email svg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: var(--s-4);
+}
+
+.subHeader {
+    font-size: var(--font-16);
+    line-height: 22px;
+}
+.cta {
+    color: var(--dark-green);
+    background-color: white;
+    font-weight: 500;
+}
+.facebook svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+.sendButton {
+    color: var(--white-100);
+    background-color: var(--accent-orange);
+}
+
+.footerBottom {
+    border-top: 0.5px solid var(--white-40);
+}
+.footerBottomContent {
+    height: 64px;
+    color: var(--white-80);
+    font-size: 14px;
+    font-weight: 400;
+}
+.footerBottomContent svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}

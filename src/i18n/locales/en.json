@@ -92,5 +92,18 @@
             "question": "What’s the best way to choose the right therapist?",
             "answer": "Finding the right therapist begins with understanding your personal needs—identify the issues you’re dealing with and the goals you want to achieve. Seek out a qualified specialist experienced in those areas, and review their therapeutic approach, credentials, and licensing."
         }
+    },
+
+    "footer": {
+        "header": "Hello, I invite you to a conversation!",
+        "copyEmail": "Copy",
+        "subHeader": "Sometimes all it takes is a small step to start feeling lighter. If you feel ready – it's time for our session",
+        "cta": "Start your session",
+        "name": "Name",
+        "email": "Email address",
+        "message": "Want to talk? Share what's on your mind.",
+        "send": "Submit your enquiry",
+        "privacy": "Privacy Policy",
+        "terms": "Terms and Conditions"
     }
 }

@@ -1,12 +1,13 @@
 .icon {
 	display: inline-flex;
     direction: var(--dir);
+    line-height: 0%;
 }
 
 .icon svg {
 	height: 0.75em;
 	width: 0.75em;
-    fill: currentColor;
+    /* fill: currentColor; */
     margin-inline-end: var(--icon-space, 0.5em);
     transform: scale(1);
 }
@@ -19,12 +20,3 @@
     height: var(--icon-size);
     width: var(--icon-size);
 }
-/* .cap svg {
-    height: 1cap;
-    width: 1cap;
-}
-
-.ex svg {
-    height: 1ex;
-    width: 1ex;
-} */

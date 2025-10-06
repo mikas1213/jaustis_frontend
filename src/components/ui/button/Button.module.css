@@ -1,0 +1,27 @@
+.button {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.33em;
+    border: none;
+    outline: none;
+    transition: opacity 0.2s ease;
+}
+.button:hover {
+    opacity: 0.9;
+}
+
+.button.md {
+    font-size: var(--font-16);
+    font-weight: 500;
+    height: var(--s-48);
+    border-radius: var(--br-8);
+    padding: 0 var(--s-16);
+}
+
+.button.md svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+

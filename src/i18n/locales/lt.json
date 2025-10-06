@@ -92,5 +92,18 @@
             "question": "Kaip man susirasti tinkamą terapeutą?",
             "answer": "Tinkamo terapeuto paieška prasideda nuo savo poreikių įvertinimo – pagalvokite, kokios problemos jus kamuoja ir kokių rezultatų tikitės. Ieškokite kvalifikuoto specialisto, turinčio patirties jūsų problemų sprendime, atsižvelkite į jo taikomus metodus, kvalifikaciją ir licencijas."
         }
+    },
+
+    "footer": {
+        "header": "Labas, kviečiu tave pokalbiui!",
+        "copyEmail": "Kopijuoti",
+        "subHeader": "Kartais tereikia mažo žingsnio, kad pradėtum jaustis lengviau. Jei jautiesi pasiruošusi – laikas mūsų sesijai",
+        "cta": "Rezervuoti sesiją",
+        "name": "Vardas",
+        "email": "El. Paštas",
+        "message": "Nori pasikalbėti? Pasidalink tuo kas sukasi galvoje",
+        "send": "Siųsti pranešimą",
+        "privacy": "Privatumo politika",
+        "terms": "Pirkimo padavimo taisyklės"
     }
 }

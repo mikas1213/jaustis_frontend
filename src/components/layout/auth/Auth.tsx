@@ -5,7 +5,7 @@ import { Person } from '../../ui/icons';
 const Auth = ({ className = ''}) => {
     return (
         <div className={`${styles.auth} ${className}`}>
-            <Icon className={styles.personIcon} space='0' icon={ <Person /> } />
+            <Icon className={styles.personIcon} space='0' icon={ <Person fill='var(--white-100)' /> } />
         </div>
     );
 };

@@ -1,7 +1,10 @@
 .grid {
     display: grid;
     gap: var(--space, 1rem);
+    /* grid-column: 1 / span 2; */
 }
+
+
 
 @supports (width: min(var(--minimum), 100%)) {
     .grid {

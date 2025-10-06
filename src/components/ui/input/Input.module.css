@@ -1,0 +1,28 @@
+.inputGroup {
+    width: 100%;
+}
+
+.inputGroup input {
+    width: 100%;
+    height: var(--s-48);
+    
+    padding: 0 var(--s-16);
+    border: none;
+    outline: 2px solid #ffffff00;
+    border-radius: var(--br-8);
+    color: var(--dark-green);
+    background-color: var(--white-100);
+    transition: outline 0.2s ease;
+    font-size: var(--font-16);
+    font-weight: 500;
+}
+
+.inputGroup input::placeholder {
+    color: var(--dark-green);
+}
+
+.inputGroup input:focus {
+  outline: none;
+  background-color: hsl(176, 30%, 97%);
+  box-shadow: 0 0 0 3px hsla(176, 98%, 35%, 0.2);
+}
