@@ -1,6 +1,8 @@
 type Language = {
     id: number,
-	name: 'LT' | 'EN' | 'NO';
+	name: 'LT' 
+    | 'EN' 
+    // | 'NO';
     icon: string;
 };
 
