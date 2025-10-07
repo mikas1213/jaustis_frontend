@@ -1,5 +1,5 @@
 .aboutMe {
-    margin-block: calc(var(--s-8) * 10);
+    padding-block: calc(var(--s-8) * 10);
 }
 
 .left {

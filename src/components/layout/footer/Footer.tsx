@@ -20,7 +20,7 @@ const Footer = () => {
 
                         <Box className={styles.email}>
                             <span>terapija@jaustis.lt</span>                                
-                            <Icon icon={<Copy />} label={t('footer:copyEmail')} cursor={true} />
+                            <Icon icon={<Copy />} label={t('footer:copyEmail')} cursorPointer={true} />
                         </Box>
 
                         <Box className={styles.subHeader}>{t('footer:subHeader')}</Box>
@@ -32,7 +32,7 @@ const Footer = () => {
                             />
                         </Box>
                         <Box className={styles.facebook}>
-                            <Icon label='facebook' icon={ <Facebook /> } cursor={true} align='center' />
+                            <Icon label='facebook' icon={ <Facebook /> } cursorPointer={true} align='center' />
                         </Box>
                     </Stack>
 

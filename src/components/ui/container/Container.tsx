@@ -21,6 +21,7 @@ type ContainerProps = {
 };
 
 const Container = forwardRef<HTMLDivElement, ContainerProps>(({ as: Component = 'div',  children, maxWidth = 'var(--layout-width)', padding = '1rem', className = '', id = undefined}, ref) => {
+    console.log(padding)
     const containerStyle = {
         '--max-width': maxWidth,
         '--padding': padding

@@ -19,7 +19,8 @@ if(!fs.existsSync(__iconsDir)) {
 
 const files = fs.readdirSync(__iconsDir);
 const exportLines = generateExportLines(files);
-console.log('exportLines: ', exportLines)
+console.log('exportLines: ', exportLines);
+
 if(exportLines.length) {
     fs.writeFileSync(path.join(__iconsDir, 'index.ts'), exportLines.join('\n'));
 } else {

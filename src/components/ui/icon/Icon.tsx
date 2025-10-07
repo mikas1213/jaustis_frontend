@@ -20,10 +20,10 @@ type IconProps = {
     sizeType?: 'cap' | 'ex'
     size?: string,
     align?: 'baseline' | 'center'
-    cursor?: boolean
+    cursorPointer?: boolean
 };
 
-const Icon = ({ icon, className = '', label = null, space = '0.33em', dir = 'ltr', sizeType = 'cap', size = '1cap', align = 'baseline', cursor = false}: IconProps) => {
+const Icon = ({ icon, className = '', label = null, space = '0.33em', dir = 'ltr', sizeType = 'cap', size = '1cap', align = 'baseline', cursorPointer = false}: IconProps) => {
 
     const classNames = [
         styles.icon,
@@ -35,7 +35,7 @@ const Icon = ({ icon, className = '', label = null, space = '0.33em', dir = 'ltr
         '--icon-space': space,
         '--icon-size': size,
         '--dir': dir,
-        'cursor': cursor ? 'pointer' : 'default',
+        'cursor': cursorPointer ? 'pointer' : 'default',
         alignItems: align
     };
 

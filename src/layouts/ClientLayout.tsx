@@ -1,14 +1,14 @@
 import { Outlet } from 'react-router';
 import { Header, Footer } from '../components/layout';
-import { ActiveSectionProvider } from '../contexts';
+import { ObserverProvider } from '../contexts';
 
 const ClientLayout = () => {
 	return (
-		<ActiveSectionProvider>
+		<ObserverProvider>
 			<Header />
 			<Outlet />
 			<Footer />
-		</ActiveSectionProvider>
+		</ObserverProvider>
 	);
 };
 

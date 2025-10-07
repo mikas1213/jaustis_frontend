@@ -24,7 +24,7 @@ const StatisticSection = () => {
     const { t } = useTranslation();
 
 	return (
-		<Container maxWidth='100vw' as='section' padding='0' className={styles.statisticSection}>
+		<Container id='statistics' as='section' maxWidth='100vw' padding='0' className={styles.statisticSection}>
             <Container padding='0'>
                 <Grid min='100px' space='1rem'>
                     {statistics.map(stat => 

@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react';
 import { Cluster } from '../../ui';
 import { useTranslation } from 'react-i18next';
 import { languages } from '../../../i18n/languages';
+import { useObserver } from '../../../contexts';
 
 const LangToggle = () => {
-
+    const { heroPassed } = useObserver();
     const { i18n } = useTranslation();
     const lngCount: number = Object.entries(languages).length;
     const [lngNr, setLngNr] = useState<number>(() => {
@@ -19,6 +20,11 @@ const LangToggle = () => {
     });
 
     const langToggleClasses = [
+        styles.languageToggle,
+        heroPassed && styles.heroPassed
+    ].filter(Boolean).join(' ');
+
+    const languagesClasses = [
         styles.languages,
         styles[`language${lngCount}`],
         styles[`lang${lngNr}`],
@@ -42,8 +48,8 @@ const LangToggle = () => {
 
 
     return (
-        <Cluster className={styles.languageToggle}>
-            <Cluster gap='0' className={langToggleClasses}> 
+        <Cluster className={langToggleClasses}>
+            <Cluster gap='0' className={languagesClasses}> 
                 {Object.entries(languages).map(([key, value], i) => 
                     <div key={key} className={`${styles.flag} ${lngNr === i+1 ? styles.choosedLng : ''}`} onClick={() => {
                         i18n.changeLanguage(key);

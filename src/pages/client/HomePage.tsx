@@ -3,7 +3,7 @@ import {
 	StatisticSection,
 	AboutMeSection,
 	PriceSection,
-	BookingSection,
+	ReservationSection,
 	ReviewSection,
 	ArticleSection,
 	FaqSection,
@@ -16,7 +16,7 @@ const HomePage = () => {
 			<StatisticSection />
 			<AboutMeSection />
 			<PriceSection />
-			<BookingSection />
+			<ReservationSection />
 			<ReviewSection />
 			<ArticleSection />
 			<FaqSection />

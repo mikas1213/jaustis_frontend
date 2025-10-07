@@ -32,12 +32,11 @@ const Cluster = forwardRef<HTMLDivElement, ClusterProps>(({ as: Component = 'div
     const clusterStyle = {
         '--gap': gap,
         '--justify': justify,
-        '--align': align,
-        ...props
+        '--align': align
     } as CSSProperties;
 
     return (
-        <Component ref={ref} className={clusterClasses} style={clusterStyle}>
+        <Component ref={ref} className={clusterClasses} style={clusterStyle} {...props}>
             { children }
         </Component>
     );

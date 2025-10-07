@@ -9,6 +9,10 @@
     padding-inline: var(--s-4);
     user-select: none;
 }
+.heroPassed {
+    background-color: var(--true-grey-700);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .languages {
     position: relative;
     height: 100%;

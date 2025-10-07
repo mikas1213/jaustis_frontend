@@ -1,1 +1,1 @@
-export { ActiveSectionProvider, useActiveSection } from './ActiveSectionContext';
+export { ObserverProvider, useObserver } from './ObserverContext';

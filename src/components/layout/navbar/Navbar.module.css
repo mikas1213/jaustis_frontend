@@ -8,33 +8,53 @@
     background-color: var(--true-grey-950);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
-    transition: background-color 0.2s ease forward;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
-.navbar.active {
+
+.heroPassed {
     background-color: var(--true-grey-700);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .navbarMenu {
     display: grid;
     place-items: center;
 	gap: var(--nav-item-gap);
 }
-.navbarMenu.lt { grid-template-columns: 47px 56px 121px 103px 64px 142px; }
-.navbarMenu.en { grid-template-columns: 62px 37px 115px 78px 57px 134px; }
-.navbarMenu.no { grid-template-columns: 38px 37px 115px 78px 57px 130px; }
+.lt { grid-template-columns: 47px 56px 121px 103px 64px 142px; }
+.en { grid-template-columns: 62px 37px 115px 78px 57px 134px; }
+.no { grid-template-columns: 38px 37px 115px 78px 57px 130px; }
+
+
 .navbarItem {
     display: grid;
     place-content: center;
 }
-.navbarItem span, .navbarItem a {
+.navbarItem :is(span, a) {
+    cursor: pointer;
 	color: var(--white-100);
 	font-weight: 400;
 	font-size: var(--font-25);
 	letter-spacing: -0.01em;
+    transition: color 0.1s ease;
 }
 .navbarItem.active span {    
 	font-weight: 900;
+    color: var(--accent-orange);
 } 
 
-.navbarItem span:hover {
-    cursor: pointer;
+.navbarItem a {
+    position: absolute;
+    padding: 6px 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    color: var(--true-grey-700) !important;
+    font-weight: 500 !important;
+    background-color: var(--white-80);
+    border-radius: 100px;
+    transition: background-color 0.2s ease;
+}
+.navbarItem a:hover {
+    background-color: var(--white-100);
 }

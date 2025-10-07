@@ -22,8 +22,8 @@ const HeroSection = (): ReactElement => {
     const isLoaded = useIsLoaded();
 
 	return (
-		<Container id='hero' as='section' maxWidth='100vw' padding='0' className={styles.heroSection}>
-            <Container padding='0'>
+		<Container id='hero' as='section' maxWidth='100vw' padding={'0'} className={styles.heroSection}>
+            <Container padding={'0'}>
                 <Stack space='96px' className={styles.parallax}>
                     <Headline className={`${styles.headline} ${isLoaded ? styles.loaded : ''}`} />
                     <Grid space='0' min='160px' className={`${styles.serviceCards} ${isLoaded ? styles.loaded : ''}`}>

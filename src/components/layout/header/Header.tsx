@@ -6,32 +6,32 @@ import Auth from '../auth/Auth';
 import { Cluster, Container  } from '../../ui';
 import LangToggle from '../langToggle/LangToggle';
 import { useTranslation } from 'react-i18next';
-import { useActiveSection } from '../../../contexts';
+import { scrollToElement } from '../../../utils/scrolltoElement';
+
+const navItems = ['about', 'price', 'reservation', 'articles', 'faq', 'mano-sesijos'] as const;
 
 const Header = () => {
     const { t } = useTranslation(); 
     const isVisible: boolean = useScrollDirection(50);
     const isVisibleStyle = `${isVisible ? styles.visible : styles.hidden}`;
-    const { activeSection } = useActiveSection();
     
     const logoClasses = [
         styles.logoSize,
         isVisibleStyle
     ].join(' ');
+
+    const handleScrollToTop = () => scrollToElement('hero', 0);
     
     return (        
         <header className={styles.header}>
             <Container padding='0'>
                 <Cluster justify='space-between' align='center'>
-                    <JaustisLogo className={logoClasses} />
+                    <JaustisLogo className={logoClasses} cursorPointer={true} onClick={handleScrollToTop} />
+
                     <Navbar>
-                        <Navbar.Item section='aboutme' active={activeSection === 'aboutme'}>{t('navbar:about')}</Navbar.Item>
-                        <Navbar.Item section='price' active={activeSection === 'price'}>{t('navbar:price')}</Navbar.Item>
-                        <Navbar.Item section='booking' active={activeSection === 'booking'}>{t('navbar:reservation')}</Navbar.Item>
-                        <Navbar.Item section='articles' active={activeSection === 'articles'}>{t('navbar:articles')}</Navbar.Item>
-                        <Navbar.Item section='faq' active={activeSection === 'faq'}>{t('navbar:faq')}</Navbar.Item>
-                        <Navbar.Item to='/mano-sesijos' className={styles.mySessionsItem}>{t('navbar:mySessions')}</Navbar.Item>
+                        {navItems.map(item => <Navbar.Item key={item} section={item}>{t(`navbar:${item}`)}</Navbar.Item>)}
                     </Navbar>
+                    
                     <Cluster gap='var(--s-16)' className={isVisibleStyle}>
                         <LangToggle />
                         <Auth />
